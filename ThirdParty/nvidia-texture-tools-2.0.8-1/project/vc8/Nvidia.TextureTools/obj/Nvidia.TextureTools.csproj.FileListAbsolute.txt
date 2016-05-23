@@ -1,0 +1,10 @@
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\bin\Release\Nvidia.TextureTools.dll
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\bin\Release\Nvidia.TextureTools.pdb
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Release\ResolveAssemblyReference.cache
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Release\Nvidia.TextureTools.dll
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Release\Nvidia.TextureTools.pdb
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\bin\Debug\Nvidia.TextureTools.dll
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\bin\Debug\Nvidia.TextureTools.pdb
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Debug\Nvidia.TextureTools.dll
+C:\Work\Trunk\Medusa\ThirdParty\nvidia-texture-tools-2.0.8-1\project\vc8\Nvidia.TextureTools\obj\Debug\Nvidia.TextureTools.pdb

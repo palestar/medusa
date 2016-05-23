@@ -1,0 +1,510 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MusicPort.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TemplatePort DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TemplatePort\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TemplatePort.DLL\0"
+            VALUE "ProductName", "TemplatePort Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_PORT                ICON    DISCARDABLE     "res\\port.ico"
+IDI_SEGMENT             ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_BRANCH              ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_TRIGGER             ICON    DISCARDABLE     "res\\ico00002.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PORT MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename\tF2",                 ID_EDIT_RENAME
+    END
+    POPUP "&Music"
+    BEGIN
+        MENUITEM "&Play",                       ID_MUSIC_PLAY
+        MENUITEM "&Stop",                       ID_MUSIC_STOP
+    END
+    POPUP "&Segments"
+    BEGIN
+        MENUITEM "&Auto Create",                ID_SEGMENTS_AUTOCREATE
+        MENUITEM "&Create",                     ID_SEGMENTS_CREATE
+        MENUITEM "&Delete",                     ID_SEGMENTS_DELETE
+        MENUITEM "&Open",                       ID_SEGMENTS_OPEN
+    END
+    POPUP "&Branches"
+    BEGIN
+        MENUITEM "&Create",                     ID_BRANCHES_CREATE
+        MENUITEM "&Delete",                     ID_BRANCHES_DELETE
+        MENUITEM "&Open",                       ID_BRANCHES_OPEN
+    END
+    POPUP "&Triggers"
+    BEGIN
+        MENUITEM "&Create",                     ID_TRIGGERS_CREATE
+        MENUITEM "&Delete",                     ID_TRIGGERS_DELETE
+        MENUITEM "&Open",                       ID_TRIGGERS_OPEN
+        MENUITEM "&Activate",                   ID_TRIGGERS_ACTIVATE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Options",                    ID_VIEW_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Class Heirarchy",            ID_VIEW_CLASSHEIRARCHY
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Resourcer...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW DIALOG DISCARDABLE  0, 0, 571, 266
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "m_Wave",IDC_STATIC,5,205,30,8
+    EDITTEXT        IDC_EDIT1,5,215,150,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "&Open",IDC_BUTTON1,5,231,50,14
+    PUSHBUTTON      "&Browse",IDC_BUTTON2,55,231,50,14
+    LTEXT           "Sample Rate:",IDC_STATIC,160,210,44,8
+    LTEXT           "Channels:",IDC_STATIC,160,220,32,8
+    LTEXT           "Segments:",IDC_STATIC,300,210,34,8
+    LTEXT           "Branches:",IDC_STATIC,300,229,33,8
+    LTEXT           "Samples:",IDC_STATIC,160,239,30,8
+    LTEXT           "00000000000000000",IDC_SAMPLERATE,215,210,69,8
+    LTEXT           "00000000000000000",IDC_CHANNELS,215,220,69,8
+    LTEXT           "00000000000000000",IDC_SAMPLES,215,239,69,8
+    LTEXT           "00000000000000000",IDC_SEGMENTS,355,210,69,8
+    LTEXT           "00000000000000000",IDC_BRANCHES,355,229,69,8
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | WS_BORDER | 
+                    WS_TABSTOP,5,15,280,180
+    LTEXT           "Segments",IDC_STATIC,5,5,32,8
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,290,15,185,180
+    LTEXT           "Branches",IDC_STATIC,290,5,31,8
+    CONTROL         "List3",IDC_LIST3,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,480,15,85,180
+    LTEXT           "Triggers",IDC_STATIC,480,5,26,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,5,200,
+                    555,1
+    LTEXT           "Active Segment:",IDC_STATIC,300,220,53,8
+    LTEXT           "Active Trigger:",IDC_STATIC,300,250,47,8
+    LTEXT           "00000000000000000",IDC_ACTIVE_SEGMENT,355,220,69,8
+    LTEXT           "00000000000000000",IDC_ACTIVE_TRIGGER,355,250,69,8
+    LTEXT           "Bits:",IDC_STATIC,160,229,14,8
+    LTEXT           "00000000000000000",IDC_BITS,215,229,69,8
+    LTEXT           "Triggers:",IDC_STATIC,300,239,28,8
+    LTEXT           "00000000000000000",IDC_TRIGGERS,355,239,69,8
+    LTEXT           "BufferSize",IDC_STATIC,430,210,33,8
+    EDITTEXT        IDC_EDIT2,430,220,40,14,ES_AUTOHSCROLL
+END
+
+IDD_CREATESEGMENTS DIALOG DISCARDABLE  0, 0, 186, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create Segments"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,20,50,14
+    LTEXT           "Segment Length (Samples):",IDC_STATIC,5,30,88,8
+    EDITTEXT        IDC_EDIT1,5,40,85,14,ES_AUTOHSCROLL
+    CONTROL         "Use Cue Information",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,80,10
+    CONTROL         "Keep Branches",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,15,65,10
+END
+
+IDD_EDITSEGMENT DIALOG DISCARDABLE  0, 0, 152, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Segment"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,100,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,22,50,14
+    LTEXT           "Begin Sample:",IDC_STATIC,5,5,46,8
+    EDITTEXT        IDC_EDIT1,5,15,70,14,ES_AUTOHSCROLL
+    LTEXT           "End Sample:",IDC_STATIC,5,30,41,8
+    EDITTEXT        IDC_EDIT2,5,40,70,14,ES_AUTOHSCROLL
+END
+
+IDD_EDITBRANCH DIALOG DISCARDABLE  0, 0, 207, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Branch"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,150,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,150,20,50,14
+    LTEXT           "Trigger:",IDC_STATIC,5,0,25,8
+    COMBOBOX        IDC_COMBO1,5,10,120,55,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Condition:",IDC_STATIC,5,25,32,8
+    COMBOBOX        IDC_COMBO2,5,36,55,50,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Segment:",IDC_STATIC,5,55,31,8
+    COMBOBOX        IDC_COMBO3,5,65,120,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 564
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 259
+    END
+
+    IDD_CREATESEGMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_EDITSEGMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_EDITBRANCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MUSICBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_MUSIC_PLAY
+    BUTTON      ID_MUSIC_STOP
+    SEPARATOR
+    BUTTON      ID_SEGMENTS_AUTOCREATE
+    BUTTON      ID_SEGMENTS_CREATE
+    BUTTON      ID_SEGMENTS_DELETE
+    BUTTON      ID_SEGMENTS_OPEN
+    SEPARATOR
+    BUTTON      ID_BRANCHES_CREATE
+    BUTTON      ID_BRANCHES_DELETE
+    BUTTON      ID_BRANCHES_OPEN
+    SEPARATOR
+    BUTTON      ID_TRIGGERS_CREATE
+    BUTTON      ID_TRIGGERS_DELETE
+    BUTTON      ID_TRIGGERS_OPEN
+    BUTTON      ID_TRIGGERS_ACTIVATE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MUSICBAR            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EDITBRANCH DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 3, 0
+0x3d3d, "\000" 
+    IDC_COMBO2, 0x403, 3, 0
+0x3d21, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_OPTIONS         "Resourcer Options\nResourcer Options"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_REFRESH         "Refresh View\nRefresh View"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_CLASSHEIRARCHY  "View Class Heirarchy\nClass Heirarchy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TRIGGERS_CREATE      "Create Trigger\nCreate Trigger"
+    ID_TRIGGERS_DELETE      "Delete Trigger\nDelete Trigger"
+    ID_TRIGGERS_OPEN        "Open Trigger\nOpen Trigger"
+    ID_TRIGGERS_ACTIVE      "Activate"
+    ID_TRIGGERS_ACTIVATE    "Activate Trigger\nActivate Trigger"
+    ID_SEGMENTS_AUTOCREATE  "Auto-Create Segments\nAuto-Create Segments"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MUSIC_PLAY           "Play\nPlay"
+    ID_MUSIC_STOP           "Stop\nStop"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BRANCHES_CREATE      "Create Branch\nCreate Branch"
+    ID_BRANCHES_DELETE      "Delete Branch\nDelete Branch"
+    ID_BRANCHES_OPEN        "Open Branch\nOpen Branch"
+    ID_SEGMENTS_CREATE      "Create Segment\nCreate Segment"
+    ID_SEGMENTS_DELETE      "Delete Segment\nDelete Segment"
+    ID_SEGMENTS_OPEN        "Open Segment\nOpen Segment"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MusicPort.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

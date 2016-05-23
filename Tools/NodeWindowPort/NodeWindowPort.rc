@@ -1,0 +1,277 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NodeWindowPort.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NodePortSkel DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NodePortSkel\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NodePortSkel.DLL\0"
+            VALUE "ProductName", "NodePortSkel Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NODEVIEW DIALOG DISCARDABLE  0, 0, 386, 251
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT11,5,15,180,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,5,40,160,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "...",IDC_BUTTON1,165,40,20,14
+    EDITTEXT        IDC_EDIT1,5,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,50,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,95,66,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,5,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,50,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,95,90,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,140,90,40,14,ES_AUTOHSCROLL
+    CONTROL         "VISIBLE",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,115,43,10
+    CONTROL         "NOCLIP",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,125,42,10
+    CONTROL         "DOCKED",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,135,46,10
+    CONTROL         "DOCK_X",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,145,45,10
+    CONTROL         "DOCK_Y",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,155,45,10
+    CONTROL         "DOCK_Z",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,165,45,10
+    CONTROL         "DOCK_OUTSIDE",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,175,72,10
+    CONTROL         "DOCUMENT",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,185,57,10
+    CONTROL         "PARENT_SIZE",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,195,65,10
+    CONTROL         "HCENTER",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,206,51,10
+    CONTROL         "VCENTER",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,215,50,10
+    CONTROL         "PARENT_WIDTH",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,225,74,10
+    CONTROL         "PARENT_HEIGHT",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,235,77,10
+    CONTROL         "HAS_BACK",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,115,53,10
+    CONTROL         "CAN_MOVE",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,125,55,10
+    CONTROL         "CAN_SIZE",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,135,51,10
+    CONTROL         "CAN_SCROLL",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,145,63,10
+    CONTROL         "CAN_DOCK",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,155,55,10
+    CONTROL         "EFFECT_FADEIN",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,165,73,10
+    CONTROL         "EFFECT_HIGHLIGHT",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,175,86,10
+    CONTROL         "EFFECT_ROLLUV",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,185,75,10
+    CONTROL         "CAN_FOCUS",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,195,59,10
+    CONTROL         "SMOOTH_UL",IDC_CHECK31,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,205,61,10
+    CONTROL         "SMOOTH_UR",IDC_CHECK32,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,215,62,10
+    CONTROL         "SMOOTH_LR",IDC_CHECK33,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,225,61,10
+    CONTROL         "SMOOTH_LL",IDC_CHECK34,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,100,235,59,10
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | LVS_EDITLABELS | 
+                    WS_BORDER | WS_TABSTOP,195,15,185,55
+    PUSHBUTTON      "&Add",IDC_BUTTON7,195,70,50,14
+    PUSHBUTTON      "&Remove",IDC_BUTTON8,245,70,50,14
+    EDITTEXT        IDC_EDIT9,195,100,185,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "&Open",IDC_BUTTON2,195,180,50,14
+    PUSHBUTTON      "&Browse",IDC_BUTTON3,245,180,50,14
+    CONTROL         "ANIM_BEAM",IDC_CHECK35,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,205,58,10
+    CONTROL         "ANIM_BACK",IDC_CHECK36,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,215,57,10
+    CONTROL         "ANIM_FLARE",IDC_CHECK37,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,225,61,10
+    CONTROL         "USER1",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,205,40,10
+    CONTROL         "USER2",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,215,40,10
+    CONTROL         "USER3",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,225,40,10
+    CONTROL         "USER4",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,235,40,10
+    CONTROL         "USER5",IDC_CHECK27,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,335,205,40,10
+    CONTROL         "USER6",IDC_CHECK28,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,335,215,40,10
+    CONTROL         "USER7",IDC_CHECK29,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,335,225,40,10
+    CONTROL         "USER8",IDC_CHECK30,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,335,235,40,10
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,5,110,185,1
+    LTEXT           "m_Name",IDC_STATIC,5,5,29,8
+    LTEXT           "m_Left",IDC_STATIC,5,55,22,8
+    LTEXT           "m_Top",IDC_STATIC,50,55,23,8
+    LTEXT           "m_Right",IDC_STATIC,5,80,27,8
+    LTEXT           "m_Bottom",IDC_STATIC,50,80,32,8
+    LTEXT           "m_Class",IDC_STATIC,5,30,27,8
+    LTEXT           "m_Resources",IDC_STATIC,195,5,44,8
+    LTEXT           "m_Alpha",IDC_STATIC,95,55,28,8
+    LTEXT           "Window Style:",IDC_STATIC,195,155,46,8
+    EDITTEXT        IDC_EDIT6,195,165,185,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Width",IDC_STATIC,95,80,20,8
+    LTEXT           "Height",IDC_STATIC,140,80,22,8
+    LTEXT           "Help",IDC_STATIC,195,90,16,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_NODEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 244
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_PORT                ICON    DISCARDABLE     "res\\port.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NodeWindowPort.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

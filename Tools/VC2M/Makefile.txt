@@ -1,0 +1,138 @@
+# Makefile - Medusa.dsw
+
+.PHONY: all
+all: \
+	Audio \
+	Bin \
+	Core \
+	CoreMemory \
+	Debug \
+	Display \
+	Draw \
+	Factory \
+	File \
+	Gui3d \
+	Math \
+	Movie \
+	Network \
+	NetworkWS \
+	Render3D \
+	Resource \
+	Standard \
+	System 
+
+.PHONY: Audio
+Audio:
+	$(MAKE) -C Audio -f Audio.mak
+
+.PHONY: Bin
+Bin: AudioDS DisplayGL GUI3D MovieDS NetworkWS Render3D DisplayD3D SystemWin
+	$(MAKE) -C Bin -f Bin.mak
+
+.PHONY: Core
+Core: CoreMemory
+	$(MAKE) -C Core -f Core.mak
+
+.PHONY: CoreMemory
+CoreMemory:
+	$(MAKE) -C CoreMemory -f CoreMemory.mak
+
+.PHONY: Debug
+Debug: Standard Core
+	$(MAKE) -C Debug -f Debug.mak
+
+.PHONY: Display
+Display: Factory Math Standard Debug Core
+	$(MAKE) -C Display -f Display.mak
+
+.PHONY: Draw
+Draw: Debug Display Factory File Math Resource Standard Core
+	$(MAKE) -C Draw -f Draw.mak
+
+.PHONY: Factory
+Factory: Debug File Standard Core
+	$(MAKE) -C Factory -f Factory.mak
+
+.PHONY: File
+File: Debug Standard Core
+	$(MAKE) -C File -f File.mak
+
+.PHONY: GUI3D
+GUI3D: Audio Debug Display Draw Factory File Math Render3D Resource Standard System Core
+	$(MAKE) -C Gui3d -f Gui3d.mak
+
+.PHONY: Math
+Math: File Debug Standard Core
+	$(MAKE) -C Math -f Math.mak
+
+.PHONY: Movie
+Movie: Factory Standard Debug Core
+	$(MAKE) -C Movie -f Movie.mak
+
+.PHONY: Network
+Network: Debug Factory File Standard Core
+	$(MAKE) -C Network -f Network.mak
+
+.PHONY: NetworkWS
+NetworkWS: Debug Factory Network Standard File Core
+	$(MAKE) -C NetworkWS -f NetworkWS.mak
+
+.PHONY: Render3D
+Render3D: Audio Debug Display Draw Factory File Resource Standard Math Core
+	$(MAKE) -C Render3D -f Render3D.mak
+
+.PHONY: Resource
+Resource: Debug Factory File Standard Core
+	$(MAKE) -C Resource -f Resource.mak
+
+.PHONY: Standard
+Standard: Core
+	$(MAKE) -C Standard -f Standard.mak
+
+.PHONY: System
+System: Debug Factory Standard File Core
+	$(MAKE) -C System -f System.mak
+
+.PHONY: clean
+clean:
+	$(MAKE) -C Audio -f Audio.mak clean
+	$(MAKE) -C Bin -f Bin.mak clean
+	$(MAKE) -C Core -f Core.mak clean
+	$(MAKE) -C CoreMemory -f CoreMemory.mak clean
+	$(MAKE) -C Debug -f Debug.mak clean
+	$(MAKE) -C Display -f Display.mak clean
+	$(MAKE) -C Draw -f Draw.mak clean
+	$(MAKE) -C Factory -f Factory.mak clean
+	$(MAKE) -C File -f File.mak clean
+	$(MAKE) -C Gui3d -f Gui3d.mak clean
+	$(MAKE) -C Math -f Math.mak clean
+	$(MAKE) -C Movie -f Movie.mak clean
+	$(MAKE) -C MovieDS -f MovieDS.mak clean
+	$(MAKE) -C Network -f Network.mak clean
+	$(MAKE) -C NetworkWS -f NetworkWS.mak clean
+	$(MAKE) -C Render3D -f Render3D.mak clean
+	$(MAKE) -C Resource -f Resource.mak clean
+	$(MAKE) -C Standard -f Standard.mak clean
+	$(MAKE) -C System -f System.mak clean
+
+.PHONY: depends
+depends:
+	$(MAKE) -C Audio -f Audio.mak depends
+	$(MAKE) -C Bin -f Bin.mak depends
+	$(MAKE) -C Core -f Core.mak depends
+	$(MAKE) -C CoreMemory -f CoreMemory.mak depends
+	$(MAKE) -C Debug -f Debug.mak depends
+	$(MAKE) -C Display -f Display.mak depends
+	$(MAKE) -C Draw -f Draw.mak depends
+	$(MAKE) -C Factory -f Factory.mak depends
+	$(MAKE) -C File -f File.mak depends
+	$(MAKE) -C Gui3d -f Gui3d.mak depends
+	$(MAKE) -C Math -f Math.mak depends
+	$(MAKE) -C Movie -f Movie.mak depends
+	$(MAKE) -C Network -f Network.mak depends
+	$(MAKE) -C NetworkWS -f NetworkWS.mak depends
+	$(MAKE) -C Render3D -f Render3D.mak depends
+	$(MAKE) -C Resource -f Resource.mak depends
+	$(MAKE) -C Standard -f Standard.mak depends
+	$(MAKE) -C System -f System.mak depends
+

@@ -1,0 +1,18 @@
+
+This wizard creates a Port for the Resourcer tool, which allows you
+to add new resource types to the tool easily...
+
+This is what you need to do:
+
+1. Search the entire project for "TODO" and make the described changes..
+2. Either change the PortView class or create a new CView derived class
+for your ports properties view.
+2. Finish up the details on your port, basically add any needed data members
+and serialize them correctly through the Widget class.
+3. Edit the Resource.h file, and start the resource numbers in a range
+that will be unique for that port
+
+Any questions, come see me...
+Richard
+
+

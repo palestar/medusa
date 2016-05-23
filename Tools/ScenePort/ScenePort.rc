@@ -1,0 +1,647 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ScenePort.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "TemplatePort DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "TemplatePort"
+            VALUE "LegalCopyright", "Copyright (C) 1998"
+            VALUE "OriginalFilename", "TemplatePort.DLL"
+            VALUE "ProductName", "TemplatePort Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_PORT                ICON                    "res\\port.ico"
+IDR_NODE                ICON                    "res\\idr_port.ico"
+IDR_BASENODE            ICON                    "res\\idr_node.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_PORTBAR             BITMAP                  "res\\renderba.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SEGMENTVIEW DIALOG  0, 0, 151, 131
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO1,5,15,135,75,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_BUTTON2,5,30,50,14
+    PUSHBUTTON      "&Remove",IDC_BUTTON3,55,30,50,14
+    EDITTEXT        IDC_EDIT5,5,65,140,14,ES_AUTOHSCROLL
+    LTEXT           "Segments:",IDC_STATIC,5,5,34,8
+    LTEXT           "m_Name:",IDC_STATIC,5,55,31,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,5,50,140,1
+    LTEXT           "m_BeginTime:",IDC_STATIC,5,85,46,8
+    LTEXT           "m_EndTime:",IDC_STATIC,80,85,40,8
+    EDITTEXT        IDC_EDIT1,5,95,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,80,95,50,14,ES_AUTOHSCROLL
+    CONTROL         "In Frames",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,115,47,10
+END
+
+IDD_SCENEVIEW DIALOG  0, 0, 146, 51
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "m_Fps",IDC_STATIC,5,5,22,8
+    EDITTEXT        IDC_EDIT3,5,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "Note: soon this dialog will be removed...",IDC_STATIC,5,35,126,8
+END
+
+IDD_DIALOG1 DIALOG  0, 0, 142, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "0x00000001",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,5,55,10
+    CONTROL         "0x00000002",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,15,55,10
+    CONTROL         "0x00000004",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,25,55,10
+    CONTROL         "0x00000008",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,35,55,10
+    CONTROL         "0x00000010",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,45,55,10
+    CONTROL         "0x00000020",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,55,55,10
+    CONTROL         "0x00000040",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,65,55,10
+    CONTROL         "0x00000080",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,75,55,10
+    CONTROL         "0x00000100",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,85,55,10
+    CONTROL         "0x00000200",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,95,55,10
+    CONTROL         "0x00000400",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,105,55,10
+    CONTROL         "0x00000800",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,115,55,10
+    CONTROL         "0x00001000",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,125,55,10
+    CONTROL         "0x00002000",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,135,55,10
+    CONTROL         "0x00004000",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,145,55,10
+    CONTROL         "0x00008000",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,155,55,10
+    CONTROL         "0x00010000",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,5,55,10
+    CONTROL         "0x00020000",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,15,55,10
+    CONTROL         "0x00040000",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,25,55,10
+    CONTROL         "0x00080000",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,35,55,10
+    CONTROL         "0x00100000",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,45,55,10
+    CONTROL         "0x00200000",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,55,55,10
+    CONTROL         "0x00400000",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,65,55,10
+    CONTROL         "0x00800000",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,75,55,10
+    CONTROL         "0x01000000",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,85,55,10
+    CONTROL         "0x02000000",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,95,55,10
+    CONTROL         "0x04000000",IDC_CHECK27,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,105,55,10
+    CONTROL         "0x08000000",IDC_CHECK28,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,115,55,10
+    CONTROL         "0x10000000",IDC_CHECK29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,125,55,10
+    CONTROL         "0x20000000",IDC_CHECK30,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,135,55,10
+    CONTROL         "0x40000000",IDC_CHECK31,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,145,55,10
+    CONTROL         "0x80000000",IDC_CHECK32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,155,55,10
+    PUSHBUTTON      "&Clear All",IDC_BUTTON1,5,170,50,14
+    PUSHBUTTON      "&Set All",IDC_BUTTON2,55,170,50,14
+END
+
+IDD_SELECTNODE DIALOG  0, 0, 177, 201
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Node"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,5,180,50,14
+    PUSHBUTTON      "NULL",IDC_BUTTON1,70,180,50,14
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_DISABLEDRAGDROP | TVS_SHOWSELALWAYS | TVS_FULLROWSELECT | WS_BORDER | WS_TABSTOP,5,5,165,170
+END
+
+IDD_EDITPROP DIALOG  0, 0, 186, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,15,175,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,35,50,14
+    LTEXT           "0000000000000000000000000000000000000000000",IDC_PROPERTY,5,5,175,8
+END
+
+IDD_EDITCHOICE DIALOG  0, 0, 186, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Choice"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_COMBO1,5,15,175,75,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,75,35,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,35,50,14
+    LTEXT           "0000000000000000000000000000000000000000000",IDC_PROPERTY,5,5,175,8
+END
+
+IDD_EDITMULTI DIALOG  0, 0, 186, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Property"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,15,175,210,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,230,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,230,50,14
+    LTEXT           "0000000000000000000000000000000000000000000",IDC_PROPERTY,5,5,175,8
+END
+
+IDD_EDITLINK DIALOG  0, 0, 181, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Link"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,15,170,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&Open",IDC_BUTTON1,70,35,50,14
+    PUSHBUTTON      "&Browse",IDC_BUTTON2,125,35,50,14
+    LTEXT           "0000000000000000000000000000000000000000000",IDC_PROPERTY,5,5,175,8
+END
+
+IDD_EDITIDLINK DIALOG  0, 0, 181, 72
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit ID Link"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT2,5,15,170,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,5,35,170,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&Apply",IDOK,5,55,50,14
+    PUSHBUTTON      "&Open",IDC_BUTTON1,70,55,50,14
+    PUSHBUTTON      "&Browse",IDC_BUTTON2,125,55,50,14
+    LTEXT           "0000000000000000000000000000000000000000000",IDC_PROPERTY,5,5,175,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SEGMENTVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_SCENEVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_SELECTNODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_EDITPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_EDITCHOICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_EDITMULTI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_EDITLINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_EDITIDLINK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PORT MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename\tF2",                 ID_EDIT_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Add",                        32820
+        MENUITEM "&Clear",                      57632
+        MENUITEM "&Delete",                     32821
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Options",                    ID_VIEW_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh\tF5",                ID_VIEW_REFRESH
+        MENUITEM SEPARATOR
+        MENUITEM "&Class Heirarchy",            ID_VIEW_CLASSHEIRARCHY
+    END
+    POPUP "&Scene"
+    BEGIN
+        MENUITEM "&Play",                       ID_SCENE_PLAY
+        MENUITEM "&Next",                       ID_SCENE_NEXT
+        MENUITEM "&Previous",                   ID_SCENE_PREVIOUS
+        MENUITEM "&Rewind",                     ID_SCENE_REWIND
+        MENUITEM SEPARATOR
+        MENUITEM "&Segments",                   ID_SCENE_EDITSEGMENTS
+        MENUITEM "&Properties",                 ID_SCENE_PROPERTIES
+        MENUITEM "&Bits",                       ID_SCENE_BITS
+        MENUITEM SEPARATOR
+        MENUITEM "Light",                       ID_SCENE_LIGHT
+    END
+    POPUP "&Node"
+    BEGIN
+        MENUITEM "&Open",                       ID_NODE_OPEN
+        MENUITEM "&Delete",                     ID_NODE_DELETE
+        MENUITEM "&Create",                     ID_NODE_CREATE
+        MENUITEM SEPARATOR
+        MENUITEM "&Select",                     ID_NODE_SELECT
+        MENUITEM "&Move XY",                    ID_NODE_MOVEXY
+        MENUITEM "&Move Z",                     ID_NODE_MOVEZ
+        MENUITEM "&Scale",                      ID_NODE_SCALE
+        MENUITEM "&Yaw",                        ID_NODE_YAW
+        MENUITEM "&Pitch",                      ID_NODE_PITCH
+        MENUITEM "&Roll",                       ID_NODE_ROLL
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset Frame",                ID_NODE_RESETFRAME
+        MENUITEM "&Reset Position",             ID_NODE_RESETPOSITION
+    END
+    POPUP "&Render"
+    BEGIN
+        MENUITEM "&Zoom",                       ID_CAMERA_ZOOM
+        MENUITEM "&Dolly",                      ID_CAMERA_DOLLY
+        MENUITEM "Pan",                         ID_CAMERA_PAN
+        MENUITEM SEPARATOR
+        MENUITEM "&Zoom Extents",               ID_CAMERA_ZOOMEXTENTS
+        MENUITEM SEPARATOR
+        MENUITEM "&Perspective",                ID_CAMERA_PERSPECTIVE
+        MENUITEM "&Orthogonal",                 ID_CAMERA_ORTHOGONAL
+        MENUITEM SEPARATOR
+        MENUITEM "&XY",                         ID_CAMERA_XY
+        MENUITEM "&YZ",                         ID_CAMERA_YZ
+        MENUITEM "&ZX",                         ID_CAMERA_ZX
+        MENUITEM "&Isometric",                  ID_CAMERA_ISOMETRIC
+        MENUITEM SEPARATOR
+        MENUITEM "Solid",                       ID_CAMERA_SOLID
+        MENUITEM "&Wireframe",                  ID_CAMERA_WIREFRAME
+        MENUITEM "Poin&t",                      ID_CAMERA_POINT
+        MENUITEM SEPARATOR
+        MENUITEM "s_ShowNodeAxis",              ID_RENDER_SSHOWNODEAXIS
+        MENUITEM "s_ShowHull",                  ID_RENDER_SSHOWHULL
+        MENUITEM "s_ShowAlignedHull",           ID_RENDER_SSHOWALIGNEDHULL
+        MENUITEM "s_DetailLevel = LOW",         ID_RENDER_SDETAILLEVELLOW
+        MENUITEM "s_DetaiLevel = MEDIUM",       ID_RENDER_SDETAILEVELMEDIUM
+        MENUITEM "s_DetailLevel = HIGH",        ID_RENDER_SDETAILLEVELHIGH
+        MENUITEM SEPARATOR
+        MENUITEM "Use Fixed Function",          ID_RENDER_SM
+        MENUITEM "Sound Enabled",               ID_RENDER_SOUNDENABLED
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Resourcer...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_PORTBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_VIEW_REFRESH
+    SEPARATOR
+    BUTTON      ID_SCENE_PREVIOUS
+    BUTTON      ID_SCENE_PLAY
+    BUTTON      ID_SCENE_NEXT
+    BUTTON      ID_SCENE_REWIND
+    BUTTON      ID_SCENE_EDITSEGMENTS
+    BUTTON      ID_SCENE_PROPERTIES
+    BUTTON      ID_SCENE_BITS
+    BUTTON      ID_SCENE_LIGHT
+    BUTTON      ID_RENDER_SOUNDENABLED
+    SEPARATOR
+    BUTTON      ID_NODE_OPEN
+    BUTTON      ID_NODE_DELETE
+    BUTTON      ID_NODE_SELECT
+    BUTTON      ID_NODE_MOVEXY
+    BUTTON      ID_NODE_MOVEZ
+    BUTTON      ID_NODE_SCALE
+    BUTTON      ID_NODE_YAW
+    BUTTON      ID_NODE_PITCH
+    BUTTON      ID_NODE_ROLL
+    BUTTON      ID_NODE_RESETFRAME
+    BUTTON      ID_NODE_RESETPOSITION
+    SEPARATOR
+    BUTTON      ID_CAMERA_ZOOM
+    BUTTON      ID_CAMERA_DOLLY
+    BUTTON      ID_CAMERA_PAN
+    BUTTON      ID_CAMERA_ZOOMEXTENTS
+    BUTTON      ID_CAMERA_XY
+    BUTTON      ID_CAMERA_YZ
+    BUTTON      ID_CAMERA_ZX
+    BUTTON      ID_CAMERA_ISOMETRIC
+    BUTTON      ID_CAMERA_SOLID
+    BUTTON      ID_CAMERA_WIREFRAME
+    BUTTON      ID_CAMERA_POINT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_PORT ACCELERATORS 
+BEGIN
+    VK_DELETE,      ID_NODE_DELETE,         VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_RENDER_PERSPECTIVEPROJECTION 
+                            "Perspective Projection\nPerspective Projection"
+    ID_RENDER_ORTHOGONALPROJECTION 
+                            "Orthogonal Projection\nOthogonal Projection"
+    ID_CAMERA_PERSPECTIVE   "Perspective Projection\nPerspective Projection"
+    ID_CAMERA_ORTHOGONAL    "Orthogonal Projection\nOrthogonal Projection"
+    ID_CAMERA_XY            "Align Camera XY\nXY View"
+    ID_CAMERA_YZ            "Align Camera YZ\nYZ View"
+    ID_CAMERA_XZ            "Align Camera XZ\nAlign Camera XZ"
+    ID_CAMERA_ZX            "Align Camera ZX\nZX View"
+    ID_CAMERA_ISOMETRIC     "Align Camera Isometric\nIsometric View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NODE_DELETE          "Delete Node\nDelete Node"
+    ID_NODE_CREATE          "Create Node\nCreateNode"
+    ID_SCENE_IMPORTHOF      "Import HOF\nImport HOF"
+    ID_CAMERA_SOLID         "Solid Fill\nSolid Fill"
+    ID_CAMERA_WIREFRAME     "Wireframe Fill\nWireFrame Fill"
+    ID_CAMERA_POINT         "Point Fill\nPoint Fill"
+    ID_SCENE_PLAY           "Play Scene\nPlay Scene"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCENE_PROPERTIES     "Scene Properties\nScene Properties"
+    ID_MODE_SELECT          "Select Mode\nSelect Mode"
+    ID_CAMERA_SELECT        "Select Mode\nSelect Mode"
+    ID_CAMERA_ZOOM          "Zoom Mode\nZoom Mode"
+    ID_CAMERA_DOLLY         "Dolly Mode\nDolly Mode"
+    ID_CAMERA_ZOOMEXTENTS   "Zoom Extents\nZoom Extents"
+    ID_CAMERA_PAN           "Pan Mode\nPan Mode"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SCENE_FLUSH          "Refresh Scene\nRefresh Scene"
+    ID_CAMERA_SRENDERLEAFHULLS "Show BSP leaves\nShow BSP leaves"
+    ID_CAMERA_SRENDERPORTALS "Show BSP portals\nShow BSP portals"
+    ID_CAMERA_SRENDERBRANCHES "Show BSP branches\nShow BSP branches"
+    ID_SCENE_EDITSEGMENTS   "Edit Scene Segments\nEdit Scene Segments"
+    ID_NODE_OPEN            "Open node view\nOpen node view"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NODE_SELECT          "Select Node\nSelect Node"
+    ID_NODE_MOVEXY          "Move XY\nMove XY"
+    ID_NODE_MOVEZ           "Move Z\nMove Z"
+    ID_NODE_YAW             "Move Yaw\nMove Yaw"
+    ID_NODE_PITCH           "Move Pitch\nMove Pitch"
+    ID_NODE_ROLL            "Move Roll\nMove Roll"
+    ID_NODE_RESETFRAME      "Reset Frame\nReset Frame"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NODE_SCALE           "Scale\nScale"
+    ID_NODE_RESETPOSITION   "Center Position\nCenter Position"
+    ID_SCENE_NEXT           "Next Frame\nNext Frame"
+    ID_SCENE_REWIND         "Rewind scene\nRewind scene"
+    ID_SCENE_LIGHT          "Light scene\nLight Scene"
+    ID_SCENE_BITS           "Render Bits\nBits"
+    ID_SCENE_PREVIOUS       "Previous Frame\nPrevious Frame"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ScenePort.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

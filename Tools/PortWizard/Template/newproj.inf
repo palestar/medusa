@@ -1,0 +1,34 @@
+$$// newproj.inf = template for list of template files
+$$//  format is 'sourceResName' \t 'destFileName'
+$$//    The source res name may be preceded by any combination of '=', '-',  '!', '?', ':', '#', and/or '*'
+$$//       '=' => the resource is binary
+$$//       '-' => the file should not be added to the project (all files are added to the project by default)
+$$//       '!' => the file should be marked exclude from build
+$$//       '?' => the file should be treated as a help file
+$$//       ':' => the file should be treated as a resource
+$$//       '#' => the file should be treated as a template (implies '!')
+$$//       '*' => bypass the custom AppWizard's resources when loading
+$$//	if name starts with / => create new subdir
+
+
+
+/res
+
+
+ROOT.CLW	$$root$$.clw
+README.TXT	ReadMe.txt
+ROOT.CPP	$$root$$.cpp
+STDAFX.H	StdAfx.h
+STDAFX.CPP	StdAfx.cpp
+:ROOT.RC2	res\$$root$$.rc2
+=:PORT.ICO	res\port.ico
+RESOURCE.H	resource.h
+ROOT.RC	$$root$$.rc
+PORT.H	Port.h
+PORT.CPP	Port.cpp
+CHILDFRAME.H	ChildFrame.h
+CHILDFRAME.CPP	ChildFrame.cpp
+PORTVIEW.H	PortView.h
+PORTVIEW.CPP	PortView.cpp
+
+

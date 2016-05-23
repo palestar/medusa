@@ -1,0 +1,93 @@
+04-29-99
+(c)1999 Logic Factory, Richard Lyle
+
+
+This is a list of the resource ranges in use by all ports
+for the resourcer tool, when creating any port for the resourcer 
+tool you should check this document and then add the range
+of resources you intend to use for your port.
+
+//----------------------------------------------------------------------------
+
+/Hydra/Tools
+
+ImagePort, 5000-5200
+NodeDetailPort, 5200-5400
+TextPort, 5400-5600
+FontPort, 6000-6200
+MaterialPort, 7000-7200
+SoundPort, 8000-8200
+MusicPort, 8200-8400
+CollectionPort, 9000-9200			
+ScenePort, 10000-10200
+BSPPort, 10200-10400
+NodeScenePort, 11000-11200
+NodeMeshPort, 12000-12200
+NodeSkinPort, 12200-12400
+NodeBonePort, 12400-12600
+NodeDecalPort, 12600-12800
+NodeWindowPort 13000-13200
+WindowButtonPort, 13200-13400
+WindowStylePort, 13400-13600
+WindowTextPort, 13600-13800
+InterfaceContextPort, 13800-14000
+NodeInterfaceClientPort, 14000-14200
+NodeSoundPort, 15000-15200
+NodeParticleSystemPort, 15400-15600
+NodeBlurPort, 15600-15800
+NodeFlarePort, 15800-16000
+NodeParticleSystem2Port, 16000-16200
+NodeParticleFieldPort, 16200-16400
+NodeGlarePort, 16400-16600
+WindowViewPort, 16600-16800
+CollectionPort, 16800-17000
+NodeSpinPort, 19000-19200
+NodeLightPort, 19200-19400
+NodeSpritePort, 19400-19600
+NodeBooleanPort, 19600-19800
+NodePathPort, 19800-20000
+NodeBSPPort, 20000-20200
+NodeTerrainPort, 21000-21200
+NodeComplexMeshPort, 21200-21400
+NodeCSGPort, 21400-21600
+NodeScalePort, 21600-21800
+NodeBooleanTimePort, 21800-22000
+
+PropertyEdit, 28000 - 28500
+
+/Seeker/Tools
+
+EpisodePort, 22000-22200
+NounMusicPort, 22200-22400
+NounPortalPort, 22400-22600
+EpisodeInterfacePort, 22600-22800
+EpisodeContextPort, 22800-23000
+EpisodeAreaPort, 23000-23200
+NounLightPort, 23200-23400
+NounSoundPort, 23600-23800
+SpellPort, 24000-24200
+NounAbilityPort, 24200-24400
+NounTargetPort, 24400-24600
+SkillPport, 24600-24800
+
+/DeepSpace
+
+GadgetContextPort, 5600-5800
+UniverseContextPort, 22000-22200
+NounShipPort, 22200-22400
+NounPort, 22400-22600
+NounBodyPort, 22600-22800
+ShipContextPort, 22800-23000
+NounGadgetPort, 23000-23200
+NounNebulaPort, 23200-23400
+NounPlanetPort, 23400-23600
+NounJumpGatePort,	23600-23800
+NounSpawnPort,	23800-24000
+NounTrailPort,	24000-24100
+NounStructurePort, 24100-24200
+NounContextPort,	24200-24300
+TechnologyPort,		24300-24400
+
+//----------------------------------------------------------------------------
+// EOF
+

@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Network", "Network.vcproj", "{1E5779FC-265E-4331-AAAD-79AAFD688DA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB} = {93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Medusa", "..\Medusa\Medusa.vcproj", "{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server2_Test", "Server2_Test\Server2_Test.vcproj", "{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB} = {93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugLinux|Win32 = DebugLinux|Win32
+		Release|Win32 = Release|Win32
+		ReleaseLinux|Win32 = ReleaseLinux|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.DebugLinux|Win32.ActiveCfg = DebugLinux|Win32
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.DebugLinux|Win32.Build.0 = DebugLinux|Win32
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.Release|Win32.ActiveCfg = Release|Win32
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.ReleaseLinux|Win32.ActiveCfg = ReleaseLinux|Win32
+		{1E5779FC-265E-4331-AAAD-79AAFD688DA4}.ReleaseLinux|Win32.Build.0 = ReleaseLinux|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.Debug|Win32.Build.0 = Debug|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.DebugLinux|Win32.ActiveCfg = DebugLinux|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.DebugLinux|Win32.Build.0 = DebugLinux|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.Release|Win32.ActiveCfg = Release|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.Release|Win32.Build.0 = Release|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.ReleaseLinux|Win32.ActiveCfg = ReleaseLinux|Win32
+		{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}.ReleaseLinux|Win32.Build.0 = ReleaseLinux|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.Debug|Win32.Build.0 = Debug|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.DebugLinux|Win32.ActiveCfg = Debug|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.DebugLinux|Win32.Build.0 = Debug|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.Release|Win32.ActiveCfg = Release|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.Release|Win32.Build.0 = Release|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.ReleaseLinux|Win32.ActiveCfg = Release|Win32
+		{2CBC8F43-38CE-4C5A-B74C-F7BEABE283CD}.ReleaseLinux|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

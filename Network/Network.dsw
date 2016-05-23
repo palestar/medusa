@@ -1,0 +1,444 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Core"=..\Core\Core.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Core", SHPAAAAA
+    ..\core
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CoreMemory
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CoreMemory"=..\CoreMemory\CoreMemory.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/CoreMemory", USRAAAAA
+    ..\corememory
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Debug"=..\Debug\Debug.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Debug", HIBAAAAA
+    ..\debug
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Factory"=..\Factory\Factory.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Factory", OIBAAAAA
+    ..\factory
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "File"=..\File\File.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/File", QHBAAAAA
+    ..\file
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "LogServer_Test"=.\LogServer_Test\LogServer_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/LogServer_Test", OBPAAAAA
+    .\logserver_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Network"=.\Network.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network", LDBAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "NetworkWS"=..\NetworkWS\NetworkWS.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/NetworkWS", UDFAAAAA
+    ..\networkws
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SMTP_Test"=.\SMTP_Test\SMTP_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/SMTP_Test", PXIAAAAA
+    .\smtp_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Server2_Test"=.\Server2_Test\Server2_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/Server2_Test", UBPAAAAA
+    .\server2_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name NetworkWS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SocketUDP2_Test"=.\SocketUDP2_Test\SocketUDP2_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/SocketUDP2_Test", DXRAAAAA
+    .\socketudp2_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name NetworkWS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SocketUDP_Test"=.\SocketUDP_Test\SocketUDP_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/SocketUDP_Test", KWQAAAAA
+    .\socketudp_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name NetworkWS
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SocketWSC2_Test"=.\SocketWSC2_Test\SocketWSC2_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/SocketWSC2_Test", YANAAAAA
+    .\socketwsc2_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SocketWSC_Test"=.\SocketWSC_Test\SocketWSC_Test.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network/SocketWSC_Test", EBNAAAAA
+    .\socketwsc_test
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Debug
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Factory
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Network
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Standard
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name File
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "Standard"=..\Standard\Standard.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Standard", OHBAAAAA
+    ..\standard
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name Core
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Medusa/Network", DDFAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
