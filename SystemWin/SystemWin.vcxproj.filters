@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{3165e883-c104-46e7-92c2-4f926f19297c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1f468e6a-9b92-4181-addb-0c3afa428b76}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="ILJ">
+      <UniqueIdentifier>{e0e94ed8-9f9e-4a62-b6c1-63c0156c9670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{46133a9a-a8d7-4049-8ae0-62bb44ac9373}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DX9">
+      <UniqueIdentifier>{330197d6-d312-45a8-bc05-78708391404e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ImageCodecJPEG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformWin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImageCodecJPEG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformWin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemWin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IJL\ijl.h">
+      <Filter>ILJ</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="IJL\ijl15.lib">
+      <Filter>ILJ</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\dinput.lib">
+      <Filter>DX9</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\dxguid.lib">
+      <Filter>DX9</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="IJL\ijl15.dll">
+      <Filter>ILJ</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

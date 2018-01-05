@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b6c56212-0e9f-481a-a076-bb652d3079bd}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{c337f416-acb0-4171-8ee2-d30c1b2a6a4a}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{17101c74-0741-44cc-9fc3-e713e9f591f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\DX9">
+      <UniqueIdentifier>{223de7fc-0b7b-4925-9b6e-3bce62e60f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\squish">
+      <UniqueIdentifier>{b5d08c35-4260-42f8-8ac7-b4ddee757911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DisplayDeviceD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayEffectBlur.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayEffectHDR.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCodecDXT.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveFactory.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveLineListD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveLineStripD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveMaterialD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveSetTransformD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveSurfaceD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveTriangleFanD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveTriangleListD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveTriangleStripD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PrimitiveWindowD3D.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\alpha.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\clusterfit.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\colourblock.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\colourfit.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\colourset.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\maths.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\rangefit.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\singlecolourfit.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\squish-1.10\squish.cpp">
+      <Filter>ThirdParty\squish</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DisplayDeviceD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayEffectBlur.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayEffectHDR.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCodecDXT.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveFactory.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveLineListD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveLineStripD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveMaterialD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveSetTransformD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveSurfaceD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveTriangleFanD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveTriangleListD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveTriangleStripD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PrimitiveWindowD3D.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\alpha.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\clusterfit.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\colourblock.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\colourfit.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\colourset.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\config.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\maths.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\rangefit.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\simd.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\simd_float.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\simd_sse.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\simd_ve.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\singlecolourfit.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\squish-1.10\squish.h">
+      <Filter>ThirdParty\squish</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\ThirdParty\Dx9\Lib\d3d9.lib">
+      <Filter>ThirdParty\DX9</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\d3dx9.lib">
+      <Filter>ThirdParty\DX9</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\dxguid.lib">
+      <Filter>ThirdParty\DX9</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\ThirdParty\squish-1.10\singlecolourlookup.inl">
+      <Filter>ThirdParty\squish</Filter>
+    </None>
+  </ItemGroup>
+</Project>

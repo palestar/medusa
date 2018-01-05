@@ -358,7 +358,7 @@ inline int StringTemplate<C>::find( C ch, int nOffset /*= 0*/, bool bIgnoreCase 
 		nOffset = 0;
 	if ( nOffset >= nLen )
 		return -1;
-	C * pFound = bIgnoreCase ? strichr( m_pString + nOffset, ch ) : strchr( m_pString + nOffset, ch);
+	C * pFound = bIgnoreCase ? strichr( m_pString + nOffset, ch ) : ((char*) strchr( m_pString + nOffset, ch));
 	if ( pFound == NULL )
 		return -1;
 	return pFound - m_pString;
@@ -377,7 +377,7 @@ inline int StringTemplate<C>::find( const C * p, int n /*= 0*/, bool bIgnoreCase
 	if ( nLen == 1 )
 		return find(p[0],n);
 
-	C * pFound = bIgnoreCase ? stristr( m_pString + n, p ) : strstr( m_pString + n, p );
+	C * pFound = bIgnoreCase ? stristr( m_pString + n, p ) : ((char*) strstr( m_pString + n, p ));
 	if ( pFound == NULL )
 		return -1;
 

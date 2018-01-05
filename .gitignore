@@ -14,3 +14,4 @@ BuildLog.htm
 *.rsp
 *.suo
 *.log
+.vs/

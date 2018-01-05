@@ -7,9 +7,6 @@
 #include "regexp_custom.h"
 #include "regmagic.h"
 
-#if defined(_WIN32)
-int iswblank(CHAR_TYPE c);
-#endif
 
 /* FORWARDING FUNCTIONS for macros in ctype */
 static int isalnum_f(CHAR_TYPE c)

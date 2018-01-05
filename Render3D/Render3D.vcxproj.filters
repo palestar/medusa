@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0870cf6e-d56b-45a1-9b05-5d76085ed37f}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{2c037f4f-d17d-4dbf-9ab1-b3a293e57821}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseNode.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Chopper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlur.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBoolean.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBooleanTime.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeComplexMesh.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeComplexMesh2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeDecal.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeDetail.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeFlare.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeGlare.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeLight.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeMesh.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeParticleField.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeParticleSystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeParticleSystem2.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodePath.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeScale.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeScene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSound.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSpin.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSplinePath.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSprite.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeStarField.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeTransform.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PathMap.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderContext.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Stripper.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseNode.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Chopper.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlur.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBoolean.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBooleanTime.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeComplexMesh.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeComplexMesh2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeDecal.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeDetail.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeFlare.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeGlare.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeLight.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeMesh.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeParticleField.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeParticleSystem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeParticleSystem2.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodePath.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodePGE.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeScale.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeScene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSound.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSpin.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSplinePath.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSprite.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeStarField.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeTransform.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PathMap.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PGE.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Render3dDll.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderContext.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Stripper.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+    <None Include="Render3D.dsw" />
+    <None Include="Render3D.mak" />
+    <None Include="..\Bin\Render3D.map" />
+    <None Include="Debug\Render3DD.map" />
+  </ItemGroup>
+</Project>

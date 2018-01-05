@@ -42,21 +42,4 @@ char* re_unicode_to_ansi(const CHAR_TYPE* s)
     return data;
 }
 
-#ifndef isblank
-int iswblank(wint_t wc)
-{
-    /* cheap implementation */
-    return wc == L'\t' || wc == L' ';
-}
-#endif
-
-#else
-
-#ifndef isblank
-int isblank(int c)
-{
-    return c == '\t' || c == ' ';
-}
-#endif
-
 #endif

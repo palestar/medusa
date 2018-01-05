@@ -12,6 +12,7 @@
 #include "Standard/Array.h"
 #include "Standard/List.h"
 #include "Standard/CriticalSection.h"
+#include <functional>
 
 #include "Shader.h"
 

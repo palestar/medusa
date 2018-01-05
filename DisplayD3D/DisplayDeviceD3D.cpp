@@ -29,6 +29,8 @@
 
 #include <math.h>
 
+int (WINAPIV * __vsnprintf)(char *, size_t, const char*, va_list) = _vsnprintf;
+
 //---------------------------------------------------------------------------------------------------
 
 LPDIRECT3D9						DisplayDeviceD3D::sm_pD3D = NULL;						// Direct3D object

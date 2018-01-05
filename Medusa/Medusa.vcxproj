@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugLinux|Win32">
+      <Configuration>DebugLinux</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLinux|Win32">
+      <Configuration>ReleaseLinux</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93AD8E65-FB3A-414D-BA0B-6E8FFDDB6CAB}</ProjectGuid>
+    <RootNamespace>Medusa</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2010</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MEDUSA_DLL;REGEXP_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDUSA_DLL;REGEXP_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;MEDUSA_DLL;REGEXP_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\;..\ThirdParty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MEDUSA_DLL;REGEXP_UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Audio\AudioBuffer.h" />
+    <ClInclude Include="..\Audio\AudioCodec.h" />
+    <ClInclude Include="..\Audio\AudioDevice.h" />
+    <ClInclude Include="..\Audio\Jukebox.h" />
+    <ClInclude Include="..\Audio\Music.h" />
+    <ClInclude Include="..\Audio\Sound.h" />
+    <ClInclude Include="..\Debug\Assert.h" />
+    <ClInclude Include="..\Debug\Error.h" />
+    <ClInclude Include="..\Debug\ExceptionHandler.h" />
+    <ClInclude Include="..\Debug\Log.h" />
+    <ClInclude Include="..\Debug\Profile.h" />
+    <ClInclude Include="..\Debug\SafeThread.h" />
+    <ClInclude Include="..\Debug\Trace.h" />
+    <ClInclude Include="..\Display\DevicePrimitive.h" />
+    <ClInclude Include="..\Display\DisplayDevice.h" />
+    <ClInclude Include="..\Display\DisplayEffect.h" />
+    <ClInclude Include="..\Display\PrimitiveLineList.h" />
+    <ClInclude Include="..\Display\PrimitiveLineStrip.h" />
+    <ClInclude Include="..\Display\PrimitiveMaterial.h" />
+    <ClInclude Include="..\Display\PrimitiveSetTransform.h" />
+    <ClInclude Include="..\Display\PrimitiveSurface.h" />
+    <ClInclude Include="..\Display\PrimitiveTriangleFan.h" />
+    <ClInclude Include="..\Display\PrimitiveTriangleList.h" />
+    <ClInclude Include="..\Display\PrimitiveTriangleStrip.h" />
+    <ClInclude Include="..\Display\PrimitiveWindow.h" />
+    <ClInclude Include="..\Display\Types.h" />
+    <ClInclude Include="..\Draw\Draw.h" />
+    <ClInclude Include="..\Draw\DrawBitIterator.h" />
+    <ClInclude Include="..\Draw\Font.h" />
+    <ClInclude Include="..\Draw\Image.h" />
+    <ClInclude Include="..\Draw\ImageCodec.h" />
+    <ClInclude Include="..\Draw\Palette.h" />
+    <ClInclude Include="..\Factory\Broker.h" />
+    <ClInclude Include="..\Factory\BrokerArchive.h" />
+    <ClInclude Include="..\Factory\BrokerCache.h" />
+    <ClInclude Include="..\Factory\BrokerFolder.h" />
+    <ClInclude Include="..\Factory\ClassKey.h" />
+    <ClInclude Include="..\Factory\Factory.h" />
+    <ClInclude Include="..\Factory\FactoryAbstract.h" />
+    <ClInclude Include="..\Factory\FactoryConcrete.h" />
+    <ClInclude Include="..\Factory\FactoryTypes.h" />
+    <ClInclude Include="..\Factory\Widget.h" />
+    <ClInclude Include="..\Factory\WidgetKey.h" />
+    <ClInclude Include="..\Factory\WidgetReference.h" />
+    <ClInclude Include="..\Factory\WidgetWeakReference.h" />
+    <ClInclude Include="..\Factory\WidgetWrap.h" />
+    <ClInclude Include="..\File\Archive.h" />
+    <ClInclude Include="..\File\CompactNumber.h" />
+    <ClInclude Include="..\File\Dictionary.h" />
+    <ClInclude Include="..\File\File.h" />
+    <ClInclude Include="..\File\FileArchive.h" />
+    <ClInclude Include="..\File\FileChange.h" />
+    <ClInclude Include="..\File\FileDisk.h" />
+    <ClInclude Include="..\File\FileFIFO.h" />
+    <ClInclude Include="..\File\FileMap.h" />
+    <ClInclude Include="..\File\FileMemory.h" />
+    <ClInclude Include="..\File\FileMemoryBlocked.h" />
+    <ClInclude Include="..\File\FindFile.h" />
+    <ClInclude Include="..\File\Path.h" />
+    <ClInclude Include="..\File\Stream.h" />
+    <ClInclude Include="..\Math\BoxHull.h" />
+    <ClInclude Include="..\Math\Constants.h" />
+    <ClInclude Include="..\Math\Euler.h" />
+    <ClInclude Include="..\Math\Helpers.h" />
+    <ClInclude Include="..\Math\Matrix33.h" />
+    <ClInclude Include="..\Math\Plane.h" />
+    <ClInclude Include="..\Math\Quat.h" />
+    <ClInclude Include="..\Math\Smoother.h" />
+    <ClInclude Include="..\Math\SphericalHull.h" />
+    <ClInclude Include="..\Math\Vector3.h" />
+    <ClInclude Include="..\MedusaDll.h" />
+    <ClInclude Include="..\Movie\Movie.h" />
+    <ClInclude Include="..\Reflection\Containers.h" />
+    <ClInclude Include="..\Reflection\Property.h" />
+    <ClInclude Include="..\Reflection\PropertyClass.h" />
+    <ClInclude Include="..\Reflection\PropertyList.h" />
+    <ClInclude Include="..\Reflection\Type.h" />
+    <ClInclude Include="..\Reflection\TypeCopy.h" />
+    <ClInclude Include="..\Reflection\TypeCopyBits.h" />
+    <ClInclude Include="..\Reflection\TypeCopyEnum.h" />
+    <ClInclude Include="..\Reflection\TypeName.h" />
+    <ClInclude Include="..\Reflection\TypeTemplate.h" />
+    <ClInclude Include="..\Reflection\Value.h" />
+    <ClInclude Include="..\Resource\Collection.h" />
+    <ClInclude Include="..\Resource\Resource.h" />
+    <ClInclude Include="..\Resource\ResourceLink.h" />
+    <ClInclude Include="..\Resource\Text.h" />
+    <ClInclude Include="..\Standard\Any.h" />
+    <ClInclude Include="..\Standard\Array.h" />
+    <ClInclude Include="..\Standard\Atomic.h" />
+    <ClInclude Include="..\Standard\AutoLock.h" />
+    <ClInclude Include="..\Standard\BitIterator.h" />
+    <ClInclude Include="..\Standard\Bits.h" />
+    <ClInclude Include="..\Standard\Buffer.h" />
+    <ClInclude Include="..\Standard\CharString.h" />
+    <ClInclude Include="..\Standard\Codec.h" />
+    <ClInclude Include="..\Standard\Color.h" />
+    <ClInclude Include="..\Standard\ColorFormat.h" />
+    <ClInclude Include="..\Standard\CommandLine.h" />
+    <ClInclude Include="..\Standard\Constant.h" />
+    <ClInclude Include="..\Standard\CriticalSection.h" />
+    <ClInclude Include="..\Standard\Dll.h" />
+    <ClInclude Include="..\Standard\Event.h" />
+    <ClInclude Include="..\Standard\EventList.h" />
+    <ClInclude Include="..\Standard\Exception.h" />
+    <ClInclude Include="..\Standard\Expression.h" />
+    <ClInclude Include="..\Standard\FIFOBuffer.h" />
+    <ClInclude Include="..\Standard\Graph.h" />
+    <ClInclude Include="..\Standard\Hash.h" />
+    <ClInclude Include="..\Standard\HashArray.h" />
+    <ClInclude Include="..\Standard\HashList.h" />
+    <ClInclude Include="..\Standard\HashMap.h" />
+    <ClInclude Include="..\Standard\Library.h" />
+    <ClInclude Include="..\Standard\Limits.h" />
+    <ClInclude Include="..\Standard\List.h" />
+    <ClInclude Include="..\Standard\LZW.h" />
+    <ClInclude Include="..\Standard\MD5.h" />
+    <ClInclude Include="..\Standard\Mutex.h" />
+    <ClInclude Include="..\Standard\NBQueue.h" />
+    <ClInclude Include="..\Standard\NBStack.h" />
+    <ClInclude Include="..\Standard\Point.h" />
+    <ClInclude Include="..\Standard\Process.h" />
+    <ClInclude Include="..\Standard\Queue.h" />
+    <ClInclude Include="..\Standard\RandomNumber.h" />
+    <ClInclude Include="..\Standard\Rect.h" />
+    <ClInclude Include="..\Standard\Reference.h" />
+    <ClInclude Include="..\Standard\Referenced.h" />
+    <ClInclude Include="..\Standard\RegExpM.h" />
+    <ClInclude Include="..\Standard\Registry.h" />
+    <ClInclude Include="..\Standard\Settings.h" />
+    <ClInclude Include="..\Standard\Singleton.h" />
+    <ClInclude Include="..\Standard\Size.h" />
+    <ClInclude Include="..\Standard\SortedArray.h" />
+    <ClInclude Include="..\Standard\StaticList.h" />
+    <ClInclude Include="..\Standard\STLHelper.h" />
+    <ClInclude Include="..\Standard\String.h" />
+    <ClInclude Include="..\Standard\StringBuffer.h" />
+    <ClInclude Include="..\Standard\StringHash.h" />
+    <ClInclude Include="..\Standard\StringHash64.h" />
+    <ClInclude Include="..\Standard\StringHelpers.h" />
+    <ClInclude Include="..\Standard\Test.h" />
+    <ClInclude Include="..\Standard\Thread.h" />
+    <ClInclude Include="..\Standard\Time.h" />
+    <ClInclude Include="..\Standard\Timer.h" />
+    <ClInclude Include="..\Standard\TimerWheel.h" />
+    <ClInclude Include="..\Standard\Tree.h" />
+    <ClInclude Include="..\Standard\Types.h" />
+    <ClInclude Include="..\Standard\UniqueNumber.h" />
+    <ClInclude Include="..\Standard\UpdateQueue.h" />
+    <ClInclude Include="..\Standard\UUE.h" />
+    <ClInclude Include="..\Standard\WeakDelegate.h" />
+    <ClInclude Include="..\Standard\WeakReference.h" />
+    <ClInclude Include="..\Standard\WidgetKey.h" />
+    <ClInclude Include="..\Standard\ZLIB.h" />
+    <ClInclude Include="..\System\CommandTarget.h" />
+    <ClInclude Include="..\System\Keyboard.h" />
+    <ClInclude Include="..\System\Locale.h" />
+    <ClInclude Include="..\System\LocalizedString.h" />
+    <ClInclude Include="..\System\Messages.h" />
+    <ClInclude Include="..\System\Platform.h" />
+    <ClInclude Include="..\ThirdParty\re2\regexp.h" />
+    <ClInclude Include="..\ThirdParty\re2\regexp_custom.h" />
+    <ClInclude Include="..\ThirdParty\re2\regexp_int.h" />
+    <ClInclude Include="..\ThirdParty\re2\regmagic.h" />
+    <ClInclude Include="..\ThirdParty\zlib\deflate.h" />
+    <ClInclude Include="..\ThirdParty\zlib\infblock.h" />
+    <ClInclude Include="..\ThirdParty\zlib\infcodes.h" />
+    <ClInclude Include="..\ThirdParty\zlib\inffast.h" />
+    <ClInclude Include="..\ThirdParty\zlib\inffixed.h" />
+    <ClInclude Include="..\ThirdParty\zlib\inftrees.h" />
+    <ClInclude Include="..\ThirdParty\zlib\infutil.h" />
+    <ClInclude Include="..\ThirdParty\zlib\trees.h" />
+    <ClInclude Include="..\ThirdParty\zlib\zconf.h" />
+    <ClInclude Include="..\ThirdParty\zlib\zlib.h" />
+    <ClInclude Include="..\ThirdParty\zlib\zutil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Audio\AudioCodec.cpp" />
+    <ClCompile Include="..\Audio\AudioDevice.cpp" />
+    <ClCompile Include="..\Audio\Jukebox.cpp" />
+    <ClCompile Include="..\Audio\Music.cpp" />
+    <ClCompile Include="..\Audio\Sound.cpp" />
+    <ClCompile Include="..\Debug\Assert.cpp" />
+    <ClCompile Include="..\Debug\Error.cpp" />
+    <ClCompile Include="..\Debug\ExceptionHandler.cpp" />
+    <ClCompile Include="..\Debug\Log.cpp" />
+    <ClCompile Include="..\Debug\Profile.cpp" />
+    <ClCompile Include="..\Debug\SafeThread.cpp" />
+    <ClCompile Include="..\Display\DevicePrimitive.cpp" />
+    <ClCompile Include="..\Display\DisplayDevice.cpp" />
+    <ClCompile Include="..\Display\DisplayEffect.cpp" />
+    <ClCompile Include="..\Draw\Draw.cpp" />
+    <ClCompile Include="..\Draw\Font.cpp" />
+    <ClCompile Include="..\Draw\Image.cpp" />
+    <ClCompile Include="..\Draw\ImageCodec.cpp" />
+    <ClCompile Include="..\Draw\Palette.cpp" />
+    <ClCompile Include="..\Factory\Broker.cpp" />
+    <ClCompile Include="..\Factory\BrokerArchive.cpp" />
+    <ClCompile Include="..\Factory\BrokerCache.cpp" />
+    <ClCompile Include="..\Factory\BrokerFolder.cpp" />
+    <ClCompile Include="..\Factory\ClassKey.cpp" />
+    <ClCompile Include="..\Factory\Factory.cpp" />
+    <ClCompile Include="..\Factory\FactoryTypes.cpp" />
+    <ClCompile Include="..\Factory\Widget.cpp" />
+    <ClCompile Include="..\Factory\WidgetWrap.cpp" />
+    <ClCompile Include="..\File\Archive.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\Dictionary.cpp" />
+    <ClCompile Include="..\File\File.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileArchive.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileChange.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileDisk.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileFIFO.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMap.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMemory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMemoryBlocked.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\FindFile.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\Path.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\File\Stream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Math\BoxHull.cpp" />
+    <ClCompile Include="..\Math\MathTypes.cpp" />
+    <ClCompile Include="..\Math\Matrix33.cpp" />
+    <ClCompile Include="..\Math\Plane.cpp" />
+    <ClCompile Include="..\Math\Quat.cpp" />
+    <ClCompile Include="..\Math\SphericalHull.cpp" />
+    <ClCompile Include="..\Math\Vector3.cpp" />
+    <ClCompile Include="..\Movie\Movie.cpp" />
+    <ClCompile Include="..\Reflection\Property.cpp" />
+    <ClCompile Include="..\Reflection\PropertyClass.cpp" />
+    <ClCompile Include="..\Reflection\PropertyList.cpp" />
+    <ClCompile Include="..\Reflection\Type.cpp" />
+    <ClCompile Include="..\Reflection\TypeCopy.cpp" />
+    <ClCompile Include="..\Reflection\Value.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseLinux|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\Resource\Collection.cpp" />
+    <ClCompile Include="..\Resource\Resource.cpp" />
+    <ClCompile Include="..\Resource\ResourceLink.cpp" />
+    <ClCompile Include="..\Resource\Text.cpp" />
+    <ClCompile Include="..\Standard\Atomic.cpp" />
+    <ClCompile Include="..\Standard\BitIterator.cpp" />
+    <ClCompile Include="..\Standard\Buffer.cpp" />
+    <ClCompile Include="..\Standard\Codec.cpp" />
+    <ClCompile Include="..\Standard\ColorFormat.cpp" />
+    <ClCompile Include="..\Standard\Constant.cpp" />
+    <ClCompile Include="..\Standard\CriticalSection.cpp" />
+    <ClCompile Include="..\Standard\Event.cpp" />
+    <ClCompile Include="..\Standard\Exception.cpp" />
+    <ClCompile Include="..\Standard\Expression.cpp" />
+    <ClCompile Include="..\Standard\FIFOBuffer.cpp" />
+    <ClCompile Include="..\Standard\Library.cpp" />
+    <ClCompile Include="..\Standard\LZW.cpp" />
+    <ClCompile Include="..\Standard\MD5.cpp" />
+    <ClCompile Include="..\Standard\Mutex.cpp" />
+    <ClCompile Include="..\Standard\Process.cpp" />
+    <ClCompile Include="..\Standard\RandomNumber.cpp" />
+    <ClCompile Include="..\Standard\Referenced.cpp" />
+    <ClCompile Include="..\Standard\RegExpM.cpp" />
+    <ClCompile Include="..\Standard\Registry.cpp" />
+    <ClCompile Include="..\Standard\Settings.cpp" />
+    <ClCompile Include="..\Standard\String.cpp" />
+    <ClCompile Include="..\Standard\StringBuffer.cpp" />
+    <ClCompile Include="..\Standard\StringHash.cpp" />
+    <ClCompile Include="..\Standard\Thread.cpp" />
+    <ClCompile Include="..\Standard\Time.cpp" />
+    <ClCompile Include="..\Standard\Timer.cpp" />
+    <ClCompile Include="..\Standard\TimerWheel.cpp" />
+    <ClCompile Include="..\Standard\UniqueNumber.cpp" />
+    <ClCompile Include="..\Standard\UUE.cpp" />
+    <ClCompile Include="..\Standard\ZLIB.cpp" />
+    <ClCompile Include="..\System\CommandTarget.cpp" />
+    <ClCompile Include="..\System\Keyboard.cpp" />
+    <ClCompile Include="..\System\Locale.cpp" />
+    <ClCompile Include="..\System\LocalizedString.cpp" />
+    <ClCompile Include="..\System\Platform.cpp" />
+    <ClCompile Include="..\ThirdParty\re2\frontend.c" />
+    <ClCompile Include="..\ThirdParty\re2\memory.c" />
+    <ClCompile Include="..\ThirdParty\re2\regerror.c" />
+    <ClCompile Include="..\ThirdParty\re2\regexp.c" />
+    <ClCompile Include="..\ThirdParty\re2\regsub.c" />
+    <ClCompile Include="..\ThirdParty\re2\report.c" />
+    <ClCompile Include="..\ThirdParty\re2\widechar.c" />
+    <ClCompile Include="..\ThirdParty\zlib\adler32.c" />
+    <ClCompile Include="..\ThirdParty\zlib\compress.c" />
+    <ClCompile Include="..\ThirdParty\zlib\crc32.c" />
+    <ClCompile Include="..\ThirdParty\zlib\deflate.c" />
+    <ClCompile Include="..\ThirdParty\zlib\gzio.c" />
+    <ClCompile Include="..\ThirdParty\zlib\infblock.c" />
+    <ClCompile Include="..\ThirdParty\zlib\infcodes.c" />
+    <ClCompile Include="..\ThirdParty\zlib\inffast.c" />
+    <ClCompile Include="..\ThirdParty\zlib\inflate.c" />
+    <ClCompile Include="..\ThirdParty\zlib\inftrees.c" />
+    <ClCompile Include="..\ThirdParty\zlib\infutil.c" />
+    <ClCompile Include="..\ThirdParty\zlib\trees.c" />
+    <ClCompile Include="..\ThirdParty\zlib\uncompr.c" />
+    <ClCompile Include="..\ThirdParty\zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WinGDB.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_selTargetType="0" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strDebugHostLogin="builder:god2899@build:2200" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileCFLAGS="-O2 -g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileCompilerC="gcc" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileCompilerC="gcc" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileIntDir="/home/builder/work/Trunk/Medusa/Medusa/ReleaseLinux/obj" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_bDisableHangReporter="false" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_bReuseStandardBuildCommand="true" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_pathDebugger="gdb" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_selBuildBeforeStartDebugging="0" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strBuildHostLogin="builder:god2899@build:2200" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_bReuseStandardBuildCommand="true" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strRemoteBuildVariables="BUILD_CONFIGURATION=&quot;ReleaseLinux&quot;" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strRemoteBuildCommand="make" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strBuildHostLogin="builder:god2899@build:2200" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_selTargetType="0" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strRemoteRebuildCommand="make clean; make" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileRM="rm -f" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileLDFLAGS="-shared" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strRemoteCleanCommand="make clean" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileDestDir="/home/builder/work/Trunk/Medusa/Bin" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileMKDIR="mkdir -p" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strRemoteBuildVariables="BUILD_CONFIGURATION=&quot;DebugLinux&quot;" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strRemoteCleanCommand="make clean" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_pathRemoteBuildDirectory="/home/builder/work/Trunk/Medusa/Medusa" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strRemoteRebuildCommand="make clean; make" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_pathRemoteBuildDirectory="/home/builder/work/Trunk/Medusa/Medusa" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strDebugHostLogin="builder:god2899@build:2200" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_pathDebugger="gdb" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileCXXFLAGS="-O2 -g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileCompilerCXX="g++" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strRemoteBuildCommand="make" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileCXXFLAGS="-g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_bDisableHangReporter="false" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileMKDIR="mkdir -p" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_bSourceSession="false" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileDestDir="/home/builder/work/Trunk/Medusa/Bin" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileLDFLAGS="-shared" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_bSourceSession="false" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileIntDir="/home/builder/work/Trunk/Medusa/Medusa/DebugLinux/obj" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_selBuildBeforeStartDebugging="0" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileCompilerCXX="g++" WinGDB_y5ae2_7c6uwsyqFE-lN4Bg_strMakefileRM="rm -f" WinGDB_Q2OnqQD6oGCRz0_kaDwI0w_strMakefileCFLAGS="-g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
