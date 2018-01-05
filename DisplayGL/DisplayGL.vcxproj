@@ -129,13 +129,15 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>.\Debug/DisplayGL.dll</OutputFile>
+      <OutputFile>.\Debug\DisplayGLD.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>../Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug/DisplayGL.pdb</ProgramDatabaseFile>
-      <ImportLibrary>.\Debug/DisplayGL.lib</ImportLibrary>
+      <ProgramDatabaseFile>.\Debug\DisplayGLD.pdb</ProgramDatabaseFile>
+      <ImportLibrary>.\Debug\DisplayGL.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <ProfileGuidedDatabase>$(OutDir)$(TargetName)D.pgd</ProfileGuidedDatabase>
+      <AdditionalOptions>/NOENTRY %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

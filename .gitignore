@@ -18,3 +18,5 @@ BuildLog.htm
 *.tlog
 UpgradeLog.htm
 *.lastbuildstate
+unsuccessfulbuild
+*.dll
