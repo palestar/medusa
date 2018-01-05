@@ -15,3 +15,6 @@ BuildLog.htm
 *.suo
 *.log
 .vs/
+*.tlog
+UpgradeLog.htm
+*.lastbuildstate
