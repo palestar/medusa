@@ -95,7 +95,7 @@
       <MapFileName>$(OutDir)$(TargetName)D.map</MapFileName>
       <MapExports>true</MapExports>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(OutDir)$(TargetName)Dlib</ImportLibrary>
+      <ImportLibrary>$(OutDir)$(TargetName)D.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
       <ProfileGuidedDatabase>$(OutDir)$(TargetName)D.pgd</ProfileGuidedDatabase>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
