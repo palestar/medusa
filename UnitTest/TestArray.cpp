@@ -141,13 +141,13 @@ public:
 
 		printf("\nUnsorted: ");
 		for(i=0;i<sortArray.size();i++)
-			printf(" %s", stringArray[i] );
+			printf(" %s", (char *)stringArray[i].cstr() );
 
 		stringArray.qsort( StringCompare );
 
 		printf( "\nSorted: " );
 		for(i=0;i<sortArray.size();i++)
-			printf(" %s", stringArray[i] );
+			printf(" %s", (char *)stringArray[i].cstr());
 		printf( "\n");
 	}
 
