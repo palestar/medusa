@@ -24,7 +24,7 @@ CharString MetaClient::getMID()
 {
 	CharString mid;
 
-#if defined(_WIN32) 
+#if defined(_WIN32) || defined(_WIN64)
 	// in windows, try to use the HD serial number as the MID
 	HRESULT hr = ::CoInitializeSecurity(NULL, -1, NULL, NULL,
 		RPC_C_AUTHN_LEVEL_DEFAULT, RPC_C_IMP_LEVEL_IMPERSONATE,
@@ -43,7 +43,7 @@ CharString MetaClient::getMID()
 			if (! FAILED( hr ) )
 			{
 				CComPtr<IEnumWbemClassObject> pEnum;
-				CComBSTR cbsQuery = L"SELECT SerialNumber FROM Win32_PhysicalMedia";
+				CComBSTR cbsQuery = L"SELECT SerialNumber FROM Win32_DiskDrive";
 				hr = pWbemServices->ExecQuery(CComBSTR("WQL"), cbsQuery, WBEM_FLAG_FORWARD_ONLY, NULL, &pEnum);
 
 				if (! FAILED( hr ) )
