@@ -203,7 +203,7 @@ bool WorldServer::start( const Context & context )
 		return false;
 	}
 
-	LOG_STATUS( "WorldServer", "Server now running..." );
+	LOG_STATUS( "WorldServer", "Server now running on %s:%d...", m_Context.address.cstr(), m_Context.port);
 
 	// this server is now running!
 	return true;

@@ -337,9 +337,9 @@ static void dumpExceptionReport( void * pException )
     DWORD section, offset;
 
 	if ( GetLogicalAddress( pExceptionRecord->ExceptionAddress, szFaultingModule, sizeof( szFaultingModule ), section, offset ) )
-		sprintf_s( sLine, sizeof(sLine), "Fault address:  %08X %02X:%08X %s",pExceptionRecord->ExceptionAddress,section, offset, szFaultingModule );
+		sprintf_s( sLine, sizeof(sLine), "Fault address:  %08X %02X:%08X %s", unsigned(pExceptionRecord->ExceptionAddress),section, offset, szFaultingModule );
 	else
-		sprintf_s( sLine, sizeof(sLine), "Fault address:  %08X ??:???????? %s", pExceptionRecord->ExceptionAddress, szFaultingModule );
+		sprintf_s( sLine, sizeof(sLine), "Fault address:  %08X ??:???????? %s", unsigned(pExceptionRecord->ExceptionAddress), szFaultingModule );
 	LOG_ERROR( "EXCEPTION",  sLine );
 
 	// Show the registers

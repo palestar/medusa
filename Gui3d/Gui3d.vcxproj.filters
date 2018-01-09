@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{45fe2d4b-04cf-4da7-bb84-3f8f3462d4a5}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{b7371aa6-9d57-465b-bd07-9be903d2bfc1}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ButtonExit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonPopup.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ButtonSetScene.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Document.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="EditPassword.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceContext.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="InterfaceContextScript.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutCenter.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutLeft.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutRight.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeConnector.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeInterfaceClient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowBar.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowButton.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowEdit.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHelp.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowLayout.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowList.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowMenu.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowSlider.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowStyle.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowText.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowTip.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowTree.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowView.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ButtonExit.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonPopup.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonSetScene.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Document.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EditPassword.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI3DDll.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceContext.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutCenter.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutLeft.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LayoutRight.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Messages.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeConnector.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeInterfaceClient.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeWindow.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowBar.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowButton.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowEdit.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowHelp.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowLayout.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowList.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowMenu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowSlider.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowStyle.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowText.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowTip.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowTree.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gui3d.mak" />
+    <None Include="Release\Gui3d.map" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{9204e3ee-2138-49ca-95d0-0436e1294802}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{8b0ff42e-39b2-4478-80ad-87de771e2675}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="DX9">
+      <UniqueIdentifier>{ec77dd88-c3a2-4467-a44b-230ef42adfc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioBufferDS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioCodecSpeech.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioDeviceDS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="JukeboxDS.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioBufferDS.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioCodecSpeech.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioDeviceDS.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="JukeboxDS.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\ThirdParty\Dx9\Lib\dsound.lib">
+      <Filter>DX9</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\dxguid.lib">
+      <Filter>DX9</Filter>
+    </Library>
+    <Library Include="..\ThirdParty\Dx9\Lib\strmiids.lib">
+      <Filter>DX9</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Release\AudioDS.map" />
+  </ItemGroup>
+</Project>

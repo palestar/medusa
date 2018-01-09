@@ -35,7 +35,7 @@ See license.txt for licensing information.
 
 
 # Requirements:
-* This engine currently requires Visual Studio 2005 to compile. 
+* This engine currently requires Visual Studio 2017 to compile. 
 
 # Quick Start:
 * Open the Medusa.sln found in the root directory, this solution will compile the core medusa files. 

@@ -68,11 +68,11 @@ public:
 			{
 				Profiler::Profile & profile = Profiler::profile( nThreadId, k );
 				printf( "%u: %s, CPU: %s, Hits: %s, AvCPU: %s, AvHits: %s, Memory: %s\n", nThreadId, profile.pName,
-					FormatNumber<char,qword>( profile.nCPU ),
-					FormatNumber<char,dword>( profile.nHits ),
-					FormatNumber<char,qword>( profile.nAvCPU ),
-					FormatNumber<char,dword>( profile.nAvHits ),
-					FormatNumber<char,int>( profile.nBytes) );
+					(char *)FormatNumber<char,qword>( profile.nCPU ).cstr(),
+					(char *)FormatNumber<char,dword>( profile.nHits ).cstr(),
+					(char *)FormatNumber<char,qword>( profile.nAvCPU ).cstr(),
+					(char *)FormatNumber<char,dword>( profile.nAvHits ).cstr(),
+					(char *)FormatNumber<char,int>( profile.nBytes).cstr() );
 			}
 		}
 		Profiler::lock( false );

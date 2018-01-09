@@ -149,7 +149,7 @@ inline size_t strnicmp( const C * s1, const C * s2, size_t n )
 
 // search for the first occurance of a character
 template<typename C>
-inline C * strchr( const C * p, size_t ch )
+inline C * strchr( const C * p, wchar_t ch )
 {
 	C c = ch;
 	for (;; ++p) 
@@ -163,7 +163,7 @@ inline C * strchr( const C * p, size_t ch )
 }
 
 template<typename C>
-inline C * strichr( const C * p, size_t ch )
+inline C * strichr( const C * p, char ch )
 {
 	C c = tolower( ch );
 	for (;; ++p) 

@@ -217,7 +217,7 @@ public:
 			CharString sValue = "?";
 			pTest->get( f.sExpr, sValue );
 
-			printf( "%s %s, p=%p, size=%d, value = %s\n", f.pType->name(), f.sExpr, f.pData, f.pType->size(), sValue );
+			printf( "%s %s, p=%p, size=%d, value = %s\n", f.pType->name(), (char *)f.sExpr.cstr(), f.pData, f.pType->size(), (char *)sValue.cstr() );
 		}
 
 		Test( pTest->set( "m_pStructure", (EmbeddedStructure *)NULL) );

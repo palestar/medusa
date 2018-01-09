@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Reflection">
+      <UniqueIdentifier>{f66fa1a6-3697-43d9-8fde-b971b7b6c66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{e6c8a675-cabf-451b-a49b-1d49cf3f92c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Display">
+      <UniqueIdentifier>{f091f13c-d7db-4ac9-8533-f964f33c99e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{222f5b72-7488-4b7c-844e-4c51c47e0350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory">
+      <UniqueIdentifier>{c017cd13-fce1-4b46-b2fb-b43aef064db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{d55a16fe-cbbd-4c4a-b46e-2c18f223495b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{8340fa48-1ce8-4141-b2e5-eea9d6d86a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\zlib">
+      <UniqueIdentifier>{9c7fe63f-7012-4df8-a409-97577694f1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty\re2">
+      <UniqueIdentifier>{6b4f11e1-0546-460b-96ff-ab8ba8a4f414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{3c8682c9-5efe-4112-8506-07ca4029d933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Movie">
+      <UniqueIdentifier>{780cb46c-8cd7-4257-a4f1-48e49cec94ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{89a5007e-3135-4673-8951-780204b910bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Standard">
+      <UniqueIdentifier>{69158a7b-6e73-4ff7-9169-3fd1b12e4e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{83173755-b55f-4272-9827-528205b61930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{f33b745a-3020-4081-8c88-28e674997171}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Reflection\Containers.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\Property.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\PropertyClass.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\PropertyList.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\Type.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\TypeCopy.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\TypeCopyBits.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\TypeCopyEnum.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\TypeName.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\TypeTemplate.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reflection\Value.h">
+      <Filter>Reflection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Assert.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Error.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\ExceptionHandler.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Log.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Profile.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\SafeThread.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Debug\Trace.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\DevicePrimitive.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\DisplayDevice.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\DisplayEffect.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveLineList.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveLineStrip.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveMaterial.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveSetTransform.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveSurface.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveTriangleFan.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveTriangleList.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveTriangleStrip.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\PrimitiveWindow.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Display\Types.h">
+      <Filter>Display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\Draw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\DrawBitIterator.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\Font.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\Image.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\ImageCodec.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Draw\Palette.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\Broker.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\BrokerArchive.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\BrokerCache.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\BrokerFolder.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\ClassKey.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\Factory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\FactoryAbstract.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\FactoryConcrete.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\FactoryTypes.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\Widget.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\WidgetKey.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\WidgetReference.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\WidgetWeakReference.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Factory\WidgetWrap.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\Archive.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\CompactNumber.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\Dictionary.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\File.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileArchive.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileChange.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileDisk.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileFIFO.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileMap.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileMemory.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FileMemoryBlocked.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\FindFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\Path.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\Stream.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\deflate.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\infblock.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\infcodes.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\inffast.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\inffixed.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\inftrees.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\infutil.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\trees.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\zconf.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\zlib.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\zlib\zutil.h">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\re2\regexp.h">
+      <Filter>ThirdParty\re2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\re2\regexp_custom.h">
+      <Filter>ThirdParty\re2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\re2\regexp_int.h">
+      <Filter>ThirdParty\re2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\re2\regmagic.h">
+      <Filter>ThirdParty\re2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\BoxHull.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Constants.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Euler.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Helpers.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Matrix33.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Quat.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Smoother.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\SphericalHull.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Movie\Movie.h">
+      <Filter>Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource\Collection.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource\ResourceLink.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource\Text.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Any.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Array.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Atomic.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\AutoLock.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\BitIterator.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Bits.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Buffer.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\CharString.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Codec.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Color.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\ColorFormat.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\CommandLine.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Constant.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\CriticalSection.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Dll.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Event.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\EventList.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Exception.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Expression.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\FIFOBuffer.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Graph.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Hash.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\HashArray.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\HashList.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\HashMap.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Library.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Limits.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\List.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\LZW.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\MD5.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Mutex.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\NBQueue.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\NBStack.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Point.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Process.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Queue.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\RandomNumber.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Rect.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Reference.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Referenced.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\RegExpM.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Registry.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Settings.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Singleton.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Size.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\SortedArray.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\StaticList.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\STLHelper.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\String.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\StringBuffer.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\StringHash.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\StringHash64.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\StringHelpers.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Test.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Thread.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Time.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Timer.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\TimerWheel.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Tree.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\Types.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\UniqueNumber.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\UpdateQueue.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\UUE.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\WeakDelegate.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\WeakReference.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\WidgetKey.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Standard\ZLIB.h">
+      <Filter>Standard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\CommandTarget.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Keyboard.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Locale.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\LocalizedString.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Messages.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\System\Platform.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\AudioBuffer.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\AudioCodec.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\AudioDevice.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\Jukebox.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\Music.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Audio\Sound.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MedusaDll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Reflection\Property.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reflection\PropertyClass.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reflection\PropertyList.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reflection\Type.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reflection\TypeCopy.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reflection\Value.cpp">
+      <Filter>Reflection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\Assert.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\Error.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\ExceptionHandler.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\Log.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\Profile.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Debug\SafeThread.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Display\DevicePrimitive.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Display\DisplayDevice.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Display\DisplayEffect.cpp">
+      <Filter>Display</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Draw\Draw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Draw\Font.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Draw\Image.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Draw\ImageCodec.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Draw\Palette.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\Broker.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\BrokerArchive.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\BrokerCache.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\BrokerFolder.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\ClassKey.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\Factory.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\FactoryTypes.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\Widget.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Factory\WidgetWrap.cpp">
+      <Filter>Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\Archive.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\Dictionary.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\File.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileArchive.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileChange.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileDisk.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileFIFO.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMap.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMemory.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FileMemoryBlocked.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\FindFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\Path.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\File\Stream.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\adler32.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\compress.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\crc32.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\deflate.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\gzio.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\infblock.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\infcodes.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\inffast.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\inflate.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\inftrees.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\infutil.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\trees.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\uncompr.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\zlib\zutil.c">
+      <Filter>ThirdParty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\frontend.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\memory.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\regerror.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\regexp.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\regsub.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\report.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\re2\widechar.c">
+      <Filter>ThirdParty\re2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\BoxHull.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\MathTypes.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Matrix33.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Plane.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Quat.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\SphericalHull.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Math\Vector3.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Movie\Movie.cpp">
+      <Filter>Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Resource\Collection.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Resource\Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Resource\ResourceLink.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Resource\Text.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Atomic.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\BitIterator.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Buffer.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Codec.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\ColorFormat.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Constant.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\CriticalSection.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Event.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Exception.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Expression.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\FIFOBuffer.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Library.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\LZW.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\MD5.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Mutex.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Process.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\RandomNumber.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Referenced.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\RegExpM.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Registry.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Settings.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\String.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\StringBuffer.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\StringHash.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Thread.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Time.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\Timer.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\TimerWheel.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\UniqueNumber.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\UUE.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Standard\ZLIB.cpp">
+      <Filter>Standard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\CommandTarget.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\Keyboard.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\Locale.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\LocalizedString.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\System\Platform.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\AudioCodec.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\AudioDevice.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\Jukebox.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\Music.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Audio\Sound.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="WinGDB.xml" />
+  </ItemGroup>
+</Project>

@@ -14,3 +14,9 @@ BuildLog.htm
 *.rsp
 *.suo
 *.log
+.vs/
+*.tlog
+UpgradeLog.htm
+*.lastbuildstate
+unsuccessfulbuild
+*.dll
