@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FC885C7-5844-4A6F-9684-8AD4AF560547}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2020</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../Bin/MedusaExport.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\max50\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;WIN32;MEDUSAEXPORT_DLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/MedusaExport.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../Bin/MedusaExportD.dle</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\Bin;..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\MedusaExportD.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\../Bin/MedusaExportD.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\../Bin/MedusaExport.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\max50\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;WIN32;MEDUSAEXPORT_DLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Release/MedusaExport.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>../Bin/MedusaExport.dle</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\Bin;..\Bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\MedusaExport.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\../Bin/MedusaExport.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DirDialog.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="ExportDialog.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="max50\include\ICoordSys_i.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="MaxInterface.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="MedusaExport.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="ProgDlg.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="SceneBuilder.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Disabled</Optimization>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MedusaExport.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="MedusaExportD.def">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="res\MedusaExport.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MedusaExport.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirDialog.h" />
+    <ClInclude Include="ExportDialog.h" />
+    <ClInclude Include="max50\include\acolor.h" />
+    <ClInclude Include="max50\include\actiontable.h" />
+    <ClInclude Include="max50\include\alerts.h" />
+    <ClInclude Include="max50\include\animtbl.h" />
+    <ClInclude Include="max50\include\appio.h" />
+    <ClInclude Include="max50\include\arcdlg.h" />
+    <ClInclude Include="max50\include\assert1.h" />
+    <ClInclude Include="max50\include\baseinterface.h" />
+    <ClInclude Include="max50\include\bezfont.h" />
+    <ClInclude Include="max50\include\bitarray.h" />
+    <ClInclude Include="max50\include\bitmap.h" />
+    <ClInclude Include="max50\include\bmmlib.h" />
+    <ClInclude Include="max50\include\box2.h" />
+    <ClInclude Include="max50\include\box3.h" />
+    <ClInclude Include="max50\include\buildnumber.h" />
+    <ClInclude Include="max50\include\buildver.h" />
+    <ClInclude Include="max50\include\captypes.h" />
+    <ClInclude Include="max50\include\channels.h" />
+    <ClInclude Include="max50\include\chkmtlapi.h" />
+    <ClInclude Include="max50\include\client.h" />
+    <ClInclude Include="max50\include\cmdmode.h" />
+    <ClInclude Include="max50\include\color.h" />
+    <ClInclude Include="max50\include\contextids.h" />
+    <ClInclude Include="max50\include\control.h" />
+    <ClInclude Include="max50\include\coreexp.h" />
+    <ClInclude Include="max50\include\csapi.h" />
+    <ClInclude Include="max50\include\custattrib.h" />
+    <ClInclude Include="max50\include\custcont.h" />
+    <ClInclude Include="max50\include\dbgprint.h" />
+    <ClInclude Include="max50\include\decomp.h" />
+    <ClInclude Include="max50\include\dpoint3.h" />
+    <ClInclude Include="max50\include\dummy.h" />
+    <ClInclude Include="max50\include\dynamic.h" />
+    <ClInclude Include="max50\include\euler.h" />
+    <ClInclude Include="max50\include\evrouter.h" />
+    <ClInclude Include="max50\include\evuser.h" />
+    <ClInclude Include="max50\include\excllist.h" />
+    <ClInclude Include="max50\include\export.h" />
+    <ClInclude Include="max50\include\expr.h" />
+    <ClInclude Include="max50\include\exprlib.h" />
+    <ClInclude Include="max50\include\filters.h" />
+    <ClInclude Include="max50\include\fltapi.h" />
+    <ClInclude Include="max50\include\fltlib.h" />
+    <ClInclude Include="max50\include\frontend.h" />
+    <ClInclude Include="max50\include\gamma.h" />
+    <ClInclude Include="max50\include\gbuf.h" />
+    <ClInclude Include="max50\include\gencam.h" />
+    <ClInclude Include="max50\include\genhier.h" />
+    <ClInclude Include="max50\include\genlight.h" />
+    <ClInclude Include="max50\include\genshape.h" />
+    <ClInclude Include="max50\include\geom.h" />
+    <ClInclude Include="max50\include\geomlib.h" />
+    <ClInclude Include="max50\include\GeoTableItem.h" />
+    <ClInclude Include="max50\include\gfloat.h" />
+    <ClInclude Include="max50\include\gfx.h" />
+    <ClInclude Include="max50\include\gfxlib.h" />
+    <ClInclude Include="max50\include\gizmo.h" />
+    <ClInclude Include="max50\include\gizmoimp.h" />
+    <ClInclude Include="max50\include\gport.h" />
+    <ClInclude Include="max50\include\gup.h" />
+    <ClInclude Include="max50\include\gupapi.h" />
+    <ClInclude Include="max50\include\guplib.h" />
+    <ClInclude Include="max50\include\gutil.h" />
+    <ClInclude Include="max50\include\helpsys.h" />
+    <ClInclude Include="max50\include\hitdata.h" />
+    <ClInclude Include="max50\include\hold.h" />
+    <ClInclude Include="max50\include\hotcheck.h" />
+    <ClInclude Include="max50\include\hsv.h" />
+    <ClInclude Include="max50\include\iaggregation.h" />
+    <ClInclude Include="max50\include\iassembly.h" />
+    <ClInclude Include="max50\include\iassemblymgr.h" />
+    <ClInclude Include="max50\include\ibrowser.h" />
+    <ClInclude Include="max50\include\icollision.h" />
+    <ClInclude Include="max50\include\icolorman.h" />
+    <ClInclude Include="max50\include\icommandpanel.h" />
+    <ClInclude Include="max50\include\ICompositeShader.h" />
+    <ClInclude Include="max50\include\ICoordSys.h" />
+    <ClInclude Include="max50\include\icurvctl.h" />
+    <ClInclude Include="max50\include\icustattribcontainer.h" />
+    <ClInclude Include="max50\include\id3d9graphicswindow.h" />
+    <ClInclude Include="max50\include\id3dgraphicswindow.h" />
+    <ClInclude Include="max50\include\idatachannel.h" />
+    <ClInclude Include="max50\include\idraganddrop.h" />
+    <ClInclude Include="max50\include\idx8pixelshader.h" />
+    <ClInclude Include="max50\include\idx8vertexshader.h" />
+    <ClInclude Include="max50\include\idx9pixelshader.h" />
+    <ClInclude Include="max50\include\idx9vertexshader.h" />
+    <ClInclude Include="max50\include\iEditNormals.h" />
+    <ClInclude Include="max50\include\iemissioncolor.h" />
+    <ClInclude Include="max50\include\iepoly.h" />
+    <ClInclude Include="max50\include\ifacedatamgr.h" />
+    <ClInclude Include="max50\include\ifnpub.h" />
+    <ClInclude Include="max50\include\iguest.h" />
+    <ClInclude Include="max50\include\ihardwarematerial.h" />
+    <ClInclude Include="max50\include\ihardwaremesh.h" />
+    <ClInclude Include="max50\include\ihardwaremnmesh.h" />
+    <ClInclude Include="max50\include\ihardwarerenderer.h" />
+    <ClInclude Include="max50\include\ihardwareshader.h" />
+    <ClInclude Include="max50\include\iiksys.h" />
+    <ClInclude Include="max50\include\iimageviewer.h" />
+    <ClInclude Include="max50\include\ikctrl.h" />
+    <ClInclude Include="max50\include\ikhierarchy.h" />
+    <ClInclude Include="max50\include\iksolver.h" />
+    <ClInclude Include="max50\include\ilag.h" />
+    <ClInclude Include="max50\include\ilayer.h" />
+    <ClInclude Include="max50\include\ilayermanager.h" />
+    <ClInclude Include="max50\include\ILayerProperties.h" />
+    <ClInclude Include="max50\include\ILightingUnits.h" />
+    <ClInclude Include="max50\include\iLuminaire.h" />
+    <ClInclude Include="max50\include\imacroscript.h" />
+    <ClInclude Include="max50\include\imaterial.h" />
+    <ClInclude Include="max50\include\imblur.h" />
+    <ClInclude Include="max50\include\imenuman.h" />
+    <ClInclude Include="max50\include\imenus.h" />
+    <ClInclude Include="max50\include\impapi.h" />
+    <ClInclude Include="max50\include\impexp.h" />
+    <ClInclude Include="max50\include\impexpintf.h" />
+    <ClInclude Include="max50\include\imszip.h" />
+    <ClInclude Include="max50\include\imtl.h" />
+    <ClInclude Include="max50\include\imtledit.h" />
+    <ClInclude Include="max50\include\inode.h" />
+    <ClInclude Include="max50\include\INodeBakeProperties.h" />
+    <ClInclude Include="max50\include\INodeExposure.h" />
+    <ClInclude Include="max50\include\INodeGIProperties.h" />
+    <ClInclude Include="max50\include\INodeLayerProperties.h" />
+    <ClInclude Include="max50\include\interactiverender.h" />
+    <ClInclude Include="max50\include\interpik.h" />
+    <ClInclude Include="max50\include\interval.h" />
+    <ClInclude Include="max50\include\ioapi.h" />
+    <ClInclude Include="max50\include\iparamb.h" />
+    <ClInclude Include="max50\include\iparamb2.h" />
+    <ClInclude Include="max50\include\iparamm.h" />
+    <ClInclude Include="max50\include\iparamm2.h" />
+    <ClInclude Include="max50\include\iparamwire.h" />
+    <ClInclude Include="max50\include\IParticleObjectExt.h" />
+    <ClInclude Include="max50\include\ipipelineclient.h" />
+    <ClInclude Include="max50\include\ipoint2.h" />
+    <ClInclude Include="max50\include\ipoint3.h" />
+    <ClInclude Include="max50\include\ipointcache.h" />
+    <ClInclude Include="max50\include\IRadiosityPreferences.h" />
+    <ClInclude Include="max50\include\ireagent.h" />
+    <ClInclude Include="max50\include\irefhierarchy.h" />
+    <ClInclude Include="max50\include\irollupsettings.h" />
+    <ClInclude Include="max50\include\iskin.h" />
+    <ClInclude Include="max50\include\iskincodes.h" />
+    <ClInclude Include="max50\include\iSkinPose.h" />
+    <ClInclude Include="max50\include\ispringctrl.h" />
+    <ClInclude Include="max50\include\istddualvs.h" />
+    <ClInclude Include="max50\include\istdplug.h" />
+    <ClInclude Include="max50\include\itreevw.h" />
+    <ClInclude Include="max50\include\iunwrap.h" />
+    <ClInclude Include="max50\include\IUtilityPanel.h" />
+    <ClInclude Include="max50\include\IViewportManager.h" />
+    <ClInclude Include="max50\include\ixref.h" />
+    <ClInclude Include="max50\include\keyreduc.h" />
+    <ClInclude Include="max50\include\linklist.h" />
+    <ClInclude Include="max50\include\linshape.h" />
+    <ClInclude Include="max50\include\lockid.h" />
+    <ClInclude Include="max50\include\log.h" />
+    <ClInclude Include="max50\include\lslights.h" />
+    <ClInclude Include="max50\include\macrorec.h" />
+    <ClInclude Include="max50\include\manipulator.h" />
+    <ClInclude Include="max50\include\matrix2.h" />
+    <ClInclude Include="max50\include\matrix3.h" />
+    <ClInclude Include="max50\include\max.h" />
+    <ClInclude Include="max50\include\maxapi.h" />
+    <ClInclude Include="max50\include\maxcom.h" />
+    <ClInclude Include="max50\include\maxicon.h" />
+    <ClInclude Include="max50\include\maxnet.h" />
+    <ClInclude Include="max50\include\maxnet_archive.h" />
+    <ClInclude Include="max50\include\maxnet_file.h" />
+    <ClInclude Include="max50\include\maxnet_job.h" />
+    <ClInclude Include="max50\include\maxnet_low.h" />
+    <ClInclude Include="max50\include\maxnet_manager.h" />
+    <ClInclude Include="max50\include\maxnet_platform.h" />
+    <ClInclude Include="max50\include\maxtess.h" />
+    <ClInclude Include="max50\include\maxtypes.h" />
+    <ClInclude Include="max50\include\maxversion.h" />
+    <ClInclude Include="max50\include\mcapdev.h" />
+    <ClInclude Include="max50\include\mesh.h" />
+    <ClInclude Include="max50\include\meshacc.h" />
+    <ClInclude Include="max50\include\meshadj.h" />
+    <ClInclude Include="max50\include\meshdelta.h" />
+    <ClInclude Include="max50\include\meshdlib.h" />
+    <ClInclude Include="max50\include\meshlib.h" />
+    <ClInclude Include="max50\include\midiman.h" />
+    <ClInclude Include="max50\include\mnbigmat.h" />
+    <ClInclude Include="max50\include\mncommon.h" />
+    <ClInclude Include="max50\include\mnmath.h" />
+    <ClInclude Include="max50\include\mnmesh.h" />
+    <ClInclude Include="max50\include\MNNormalSpec.h" />
+    <ClInclude Include="max50\include\modstack.h" />
+    <ClInclude Include="max50\include\mouseman.h" />
+    <ClInclude Include="max50\include\mouseproc.h" />
+    <ClInclude Include="max50\include\mstshape.h" />
+    <ClInclude Include="max50\include\mtl.h" />
+    <ClInclude Include="max50\include\namesel.h" />
+    <ClInclude Include="max50\include\nametab.h" />
+    <ClInclude Include="max50\include\naturalLight.h" />
+    <ClInclude Include="max50\include\nodedisp.h" />
+    <ClInclude Include="max50\include\notetrck.h" />
+    <ClInclude Include="max50\include\notify.h" />
+    <ClInclude Include="max50\include\nsclip.h" />
+    <ClInclude Include="max50\include\object.h" />
+    <ClInclude Include="max50\include\objmode.h" />
+    <ClInclude Include="max50\include\omanapi.h" />
+    <ClInclude Include="max50\include\osnap.h" />
+    <ClInclude Include="max50\include\osnapapi.h" />
+    <ClInclude Include="max50\include\osnaphit.h" />
+    <ClInclude Include="max50\include\osnapmk.h" />
+    <ClInclude Include="max50\include\palutil.h" />
+    <ClInclude Include="max50\include\paramtype.h" />
+    <ClInclude Include="max50\include\partclib.h" />
+    <ClInclude Include="max50\include\particle.h" />
+    <ClInclude Include="max50\include\patch.h" />
+    <ClInclude Include="max50\include\patchcap.h" />
+    <ClInclude Include="max50\include\patchlib.h" />
+    <ClInclude Include="max50\include\patchobj.h" />
+    <ClInclude Include="max50\include\pbbitmap.h" />
+    <ClInclude Include="max50\include\pixelbuf.h" />
+    <ClInclude Include="max50\include\plugapi.h" />
+    <ClInclude Include="max50\include\plugin.h" />
+    <ClInclude Include="max50\include\pod.h" />
+    <ClInclude Include="max50\include\point2.h" />
+    <ClInclude Include="max50\include\point3.h" />
+    <ClInclude Include="max50\include\point4.h" />
+    <ClInclude Include="max50\include\polyobj.h" />
+    <ClInclude Include="max50\include\polyshp.h" />
+    <ClInclude Include="max50\include\printmanager.h" />
+    <ClInclude Include="max50\include\props.h" />
+    <ClInclude Include="max50\include\ptrvec.h" />
+    <ClInclude Include="max50\include\quat.h" />
+    <ClInclude Include="max50\include\radiosity.h" />
+    <ClInclude Include="max50\include\randgenerator.h" />
+    <ClInclude Include="max50\include\random.h" />
+    <ClInclude Include="max50\include\ref.h" />
+    <ClInclude Include="max50\include\referencemgr.h" />
+    <ClInclude Include="max50\include\render.h" />
+    <ClInclude Include="max50\include\renderelements.h" />
+    <ClInclude Include="max50\include\rtclick.h" />
+    <ClInclude Include="max50\include\samplers.h" />
+    <ClInclude Include="max50\include\sbmtlapi.h" />
+    <ClInclude Include="max50\include\scanlinepagemgr.h" />
+    <ClInclude Include="max50\include\sceneapi.h" />
+    <ClInclude Include="max50\include\setkeymode.h" />
+    <ClInclude Include="max50\include\sfx.h" />
+    <ClInclude Include="max50\include\shadbuf.h" />
+    <ClInclude Include="max50\include\shaders.h" />
+    <ClInclude Include="max50\include\shadgen.h" />
+    <ClInclude Include="max50\include\shape.h" />
+    <ClInclude Include="max50\include\shphier.h" />
+    <ClInclude Include="max50\include\shpsels.h" />
+    <ClInclude Include="max50\include\simpmod.h" />
+    <ClInclude Include="max50\include\simpobj.h" />
+    <ClInclude Include="max50\include\simpshp.h" />
+    <ClInclude Include="max50\include\simpspl.h" />
+    <ClInclude Include="max50\include\snap.h" />
+    <ClInclude Include="max50\include\soundobj.h" />
+    <ClInclude Include="max50\include\spacearraycallback.h" />
+    <ClInclude Include="max50\include\spline3d.h" />
+    <ClInclude Include="max50\include\splshape.h" />
+    <ClInclude Include="max50\include\springsys.h" />
+    <ClInclude Include="max50\include\sse.h" />
+    <ClInclude Include="max50\include\stack.h" />
+    <ClInclude Include="max50\include\stack3.h" />
+    <ClInclude Include="max50\include\stdmat.h" />
+    <ClInclude Include="max50\include\strbasic.h" />
+    <ClInclude Include="max50\include\strclass.h" />
+    <ClInclude Include="max50\include\surf_api.h" />
+    <ClInclude Include="max50\include\svcore.h" />
+    <ClInclude Include="max50\include\systemutilities.h" />
+    <ClInclude Include="max50\include\tab.h" />
+    <ClInclude Include="max50\include\tcbgraph.h" />
+    <ClInclude Include="max50\include\tcp.h" />
+    <ClInclude Include="max50\include\templt.h" />
+    <ClInclude Include="max50\include\tessint.h" />
+    <ClInclude Include="max50\include\texutil.h" />
+    <ClInclude Include="max50\include\toneop.h" />
+    <ClInclude Include="max50\include\toolmap.h" />
+    <ClInclude Include="max50\include\trig.h" />
+    <ClInclude Include="max50\include\triobj.h" />
+    <ClInclude Include="max50\include\tvnode.h" />
+    <ClInclude Include="max50\include\tvutil.h" />
+    <ClInclude Include="max50\include\udmia64.h" />
+    <ClInclude Include="max50\include\units.h" />
+    <ClInclude Include="max50\include\utilapi.h" />
+    <ClInclude Include="max50\include\utilexp.h" />
+    <ClInclude Include="max50\include\utilintf.h" />
+    <ClInclude Include="max50\include\utillib.h" />
+    <ClInclude Include="max50\include\vedge.h" />
+    <ClInclude Include="max50\include\viewfile.h" />
+    <ClInclude Include="max50\include\winutil.h" />
+    <ClInclude Include="max50\include\wrangler.h" />
+    <ClInclude Include="max50\include\xtcobject.h" />
+    <ClInclude Include="max50\include\zlibdll.h" />
+    <ClInclude Include="MedusaExport.h" />
+    <ClInclude Include="ProgDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SceneBuilder.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="max50\lib\acap.lib" />
+    <Library Include="max50\lib\bmm.lib" />
+    <Library Include="max50\lib\core.lib" />
+    <Library Include="max50\lib\CustDlg.lib" />
+    <Library Include="max50\lib\edmodel.lib" />
+    <Library Include="max50\lib\expr.lib" />
+    <Library Include="max50\lib\FLILIBD.LIB" />
+    <Library Include="max50\lib\FLILIBH.LIB" />
+    <Library Include="max50\lib\FLILIBR.LIB" />
+    <Library Include="max50\lib\flt.lib" />
+    <Library Include="max50\lib\gcomm2.lib" />
+    <Library Include="max50\lib\geom.lib" />
+    <Library Include="max50\lib\gfx.lib" />
+    <Library Include="max50\lib\gup.lib" />
+    <Library Include="max50\lib\helpsys.lib" />
+    <Library Include="max50\lib\imageViewers.lib" />
+    <Library Include="max50\lib\ManipSys.lib" />
+    <Library Include="max50\lib\maxnet.lib" />
+    <Library Include="max50\lib\Maxscrpt.lib" />
+    <Library Include="max50\lib\maxutil.lib" />
+    <Library Include="max50\lib\MenuMan.lib" />
+    <Library Include="max50\lib\menus.lib" />
+    <Library Include="max50\lib\mesh.lib" />
+    <Library Include="max50\lib\MNMath.lib" />
+    <Library Include="max50\lib\Paramblk2.lib" />
+    <Library Include="max50\lib\particle.lib" />
+    <Library Include="max50\lib\Poly.lib" />
+    <Library Include="max50\lib\RenderUtil.lib" />
+    <Library Include="max50\lib\SpringSys.lib" />
+    <Library Include="max50\lib\tessint.lib" />
+    <Library Include="max50\lib\viewfile.lib" />
+    <Library Include="max50\lib\zlibdll.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Medusa\Medusa.vcxproj">
+      <Project>{93ad8e65-fb3a-414d-ba0b-6e8ffddb6cab}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Render3D\Render3D.vcxproj">
+      <Project>{18b80ecb-53ae-47e1-af11-0c994cac2c1d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\NodeComplexMeshPort\NodeComplexMeshPort.vcxproj">
+      <Project>{5ef7e848-2518-4804-9d41-5700d82ef8d6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

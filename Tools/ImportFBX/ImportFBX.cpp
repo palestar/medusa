@@ -5,7 +5,7 @@
 	@author Richard Lyle @date 10/27/2008 11:16:02 PM
 */
 
-#define WINVER 0x500
+#define WINVER 0xA00
 
 #include "File/Path.h"
 #include "File/FileDisk.h"

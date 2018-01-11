@@ -1,0 +1,1079 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d4fbf708-5de8-42ad-9176-667ce3636795}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{ba29c94d-ee5a-4404-8b24-83f3a0bd8dd4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{53237bf1-82c1-497b-ac7c-fcc99ecfcb78}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="max50">
+      <UniqueIdentifier>{ea52ed05-7713-4b7b-9a28-7c77e360018c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="max50\lib">
+      <UniqueIdentifier>{b635115c-65e6-4fe1-8e43-5b1d07a64311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="max50\include">
+      <UniqueIdentifier>{dbca25b1-c8ff-4213-948a-ea0af7e66330}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DirDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MedusaExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="max50\include\ICoordSys_i.c">
+      <Filter>max50\include</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MedusaExport.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MedusaExport.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DirDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MedusaExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\acolor.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\actiontable.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\alerts.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\animtbl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\appio.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\arcdlg.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\assert1.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\baseinterface.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\bezfont.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\bitarray.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\bitmap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\bmmlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\box2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\box3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\buildnumber.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\buildver.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\captypes.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\channels.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\chkmtlapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\client.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\cmdmode.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\color.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\contextids.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\control.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\coreexp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\csapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\custattrib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\custcont.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\dbgprint.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\decomp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\dpoint3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\dummy.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\dynamic.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\euler.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\evrouter.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\evuser.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\excllist.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\export.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\expr.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\exprlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\filters.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\fltapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\fltlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\frontend.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gamma.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gbuf.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gencam.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\genhier.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\genlight.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\genshape.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\geom.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\geomlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\GeoTableItem.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gfloat.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gfx.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gfxlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gizmo.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gizmoimp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gport.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gup.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gupapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\guplib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\gutil.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\helpsys.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\hitdata.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\hold.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\hotcheck.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\hsv.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iaggregation.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iassembly.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iassemblymgr.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ibrowser.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\icollision.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\icolorman.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\icommandpanel.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ICompositeShader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ICoordSys.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\icurvctl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\icustattribcontainer.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\id3d9graphicswindow.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\id3dgraphicswindow.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idatachannel.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idraganddrop.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idx8pixelshader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idx8vertexshader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idx9pixelshader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\idx9vertexshader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iEditNormals.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iemissioncolor.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iepoly.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ifacedatamgr.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ifnpub.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iguest.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ihardwarematerial.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ihardwaremesh.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ihardwaremnmesh.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ihardwarerenderer.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ihardwareshader.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iiksys.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iimageviewer.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ikctrl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ikhierarchy.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iksolver.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ilag.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ilayer.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ilayermanager.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ILayerProperties.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ILightingUnits.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iLuminaire.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imacroscript.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imaterial.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imblur.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imenuman.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imenus.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\impapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\impexp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\impexpintf.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imszip.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imtl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\imtledit.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\inode.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\INodeBakeProperties.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\INodeExposure.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\INodeGIProperties.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\INodeLayerProperties.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\interactiverender.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\interpik.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\interval.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ioapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iparamb.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iparamb2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iparamm.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iparamm2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iparamwire.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\IParticleObjectExt.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ipipelineclient.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ipoint2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ipoint3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ipointcache.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\IRadiosityPreferences.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ireagent.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\irefhierarchy.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\irollupsettings.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iskin.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iskincodes.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iSkinPose.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ispringctrl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\istddualvs.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\istdplug.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\itreevw.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\iunwrap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\IUtilityPanel.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\IViewportManager.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ixref.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\keyreduc.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\linklist.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\linshape.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\lockid.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\log.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\lslights.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\macrorec.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\manipulator.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\matrix2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\matrix3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\max.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxcom.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxicon.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_archive.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_file.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_job.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_low.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_manager.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxnet_platform.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxtess.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxtypes.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\maxversion.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mcapdev.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mesh.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\meshacc.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\meshadj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\meshdelta.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\meshdlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\meshlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\midiman.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mnbigmat.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mncommon.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mnmath.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mnmesh.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\MNNormalSpec.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\modstack.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mouseman.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mouseproc.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mstshape.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\mtl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\namesel.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\nametab.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\naturalLight.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\nodedisp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\notetrck.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\notify.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\nsclip.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\object.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\objmode.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\omanapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\osnap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\osnapapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\osnaphit.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\osnapmk.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\palutil.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\paramtype.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\partclib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\particle.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\patch.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\patchcap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\patchlib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\patchobj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\pbbitmap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\pixelbuf.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\plugapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\plugin.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\pod.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\point2.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\point3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\point4.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\polyobj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\polyshp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\printmanager.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\props.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ptrvec.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\quat.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\radiosity.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\randgenerator.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\random.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\ref.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\referencemgr.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\render.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\renderelements.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\rtclick.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\samplers.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\sbmtlapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\scanlinepagemgr.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\sceneapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\setkeymode.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\sfx.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shadbuf.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shaders.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shadgen.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shape.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shphier.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\shpsels.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\simpmod.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\simpobj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\simpshp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\simpspl.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\snap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\soundobj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\spacearraycallback.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\spline3d.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\splshape.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\springsys.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\sse.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\stack.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\stack3.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\stdmat.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\strbasic.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\strclass.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\surf_api.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\svcore.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\systemutilities.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tab.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tcbgraph.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tcp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\templt.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tessint.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\texutil.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\toneop.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\toolmap.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\trig.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\triobj.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tvnode.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\tvutil.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\udmia64.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\units.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\utilapi.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\utilexp.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\utilintf.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\utillib.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\vedge.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\viewfile.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\winutil.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\wrangler.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\xtcobject.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+    <ClInclude Include="max50\include\zlibdll.h">
+      <Filter>max50\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="max50\lib\acap.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\bmm.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\core.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\CustDlg.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\edmodel.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\expr.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\FLILIBD.LIB">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\FLILIBH.LIB">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\FLILIBR.LIB">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\flt.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\gcomm2.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\geom.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\gfx.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\gup.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\helpsys.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\imageViewers.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\ManipSys.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\maxnet.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\Maxscrpt.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\maxutil.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\MenuMan.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\menus.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\mesh.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\MNMath.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\Paramblk2.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\particle.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\Poly.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\RenderUtil.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\SpringSys.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\tessint.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\viewfile.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+    <Library Include="max50\lib\zlibdll.lib">
+      <Filter>max50\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="MedusaExport.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MedusaExportD.def">
+      <Filter>Source Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
