@@ -185,14 +185,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Gui3d\Gui3d.vcxproj">
-      <Project>{cd91e4f5-1aff-476d-94be-c9770acfaf98}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Medusa\Medusa.vcxproj">
-      <Project>{93ad8e65-fb3a-414d-ba0b-6e8ffddb6cab}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\ResourcerDoc\ResourcerDoc.vcxproj">
       <Project>{e2c788f7-5d94-4a28-a68e-0dd48d5c35b6}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

@@ -234,14 +234,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Gui3d\Gui3d.vcxproj">
-      <Project>{cd91e4f5-1aff-476d-94be-c9770acfaf98}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Medusa\Medusa.vcxproj">
-      <Project>{93ad8e65-fb3a-414d-ba0b-6e8ffddb6cab}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\NodeWindowPort\NodeWindowPort.vcxproj">
       <Project>{1df5be97-ee00-41d1-b49f-a0f49a803d31}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
