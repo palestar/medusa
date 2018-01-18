@@ -280,7 +280,6 @@ private:
 		float				m_Back;
 		PointFloat			m_Center;
 		float				m_D;
-		float				m_Q;
 		float				m_W;
 		Plane				m_Fulstrum[ FULSTRUM_COUNT ];		// planes for clip testing
 
