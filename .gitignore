@@ -20,3 +20,4 @@ UpgradeLog.htm
 *.lastbuildstate
 unsuccessfulbuild
 *.dll
+Release/
