@@ -174,6 +174,7 @@ public:
 	// CDocTemplate interface
 	virtual CDocument* CreateNewDocument();
 	virtual CDocument* OpenDocumentFile( LPCTSTR lpszPathName, BOOL bMakeVisible = TRUE );
+	virtual CDocument* OpenDocumentFile( LPCTSTR lpszPathName, BOOL bAddToMRU, BOOL bMakeVisible);
 	virtual CFrameWnd* CreateNewFrame( CDocument* pDoc, CFrameWnd* pOther );
 };
 

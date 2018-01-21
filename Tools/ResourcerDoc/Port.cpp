@@ -615,6 +615,10 @@ CDocument* PortTemplate::CreateNewDocument()
 	return( NULL );
 }
 
+CDocument* PortTemplate::OpenDocumentFile(LPCSTR lpszPathName, BOOL bAddToMRU, BOOL bMakeVisible) {
+	return OpenDocumentFile(lpszPathName, bMakeVisible);
+}
+
 CDocument* PortTemplate::OpenDocumentFile( LPCTSTR lpszPathName, BOOL bMakeVisible /*= TRUE*/ )
 {
 	Port::Ref pDocument;
