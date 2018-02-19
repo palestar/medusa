@@ -26,45 +26,11 @@ CharString MetaClient::getMID()
 
 #if defined(_WIN32) || defined(_WIN64)
 	// in windows, try to use the HD serial number as the MID
-	HRESULT hr = ::CoInitializeSecurity(NULL, -1, NULL, NULL,
-		RPC_C_AUTHN_LEVEL_DEFAULT, RPC_C_IMP_LEVEL_IMPERSONATE,
-		NULL, EOAC_NONE, NULL);
-	
-	if (! FAILED( hr ) )
+	DWORD dSerial;
+	if (GetVolumeInformation(_T("C:\\"), NULL, 0, &dSerial, NULL, NULL, NULL, 0) != NULL)
 	{
-		CComPtr<IWbemLocator> pWbemLocator;
-		hr = pWbemLocator.CoCreateInstance(CLSID_WbemLocator);
-
-		if (! FAILED( hr ) )
-		{
-			CComPtr<IWbemServices> pWbemServices;
-			hr = pWbemLocator->ConnectServer(CComBSTR(L"root\\cimv2"), NULL, NULL, 0, NULL, 0, NULL, &pWbemServices);
-
-			if (! FAILED( hr ) )
-			{
-				CComPtr<IEnumWbemClassObject> pEnum;
-				CComBSTR cbsQuery = L"SELECT SerialNumber FROM Win32_DiskDrive";
-				hr = pWbemServices->ExecQuery(CComBSTR("WQL"), cbsQuery, WBEM_FLAG_FORWARD_ONLY, NULL, &pEnum);
-
-				if (! FAILED( hr ) )
-				{
-					unsigned long uObjectCount = 0;
-					CComPtr<IWbemClassObject> pWmiObject;
-					hr = pEnum->Next(WBEM_INFINITE, 1, &pWmiObject, &uObjectCount);
-
-					if (! FAILED( hr ) )
-					{
-						CComVariant cvtSerial;
-						hr = pWmiObject->Get(L"SerialNumber", 0, &cvtSerial, 0, 0);
-						if (! FAILED( hr ) )
-						{
-							mid = CW2A(cvtSerial.bstrVal);
-							mid = MD5( mid ).checksum();
-						}
-					}
-				}
-			}
-		}
+		CharString sSerial = CharString().format("$d", dSerial);
+		mid = MD5(sSerial).checksum();
 	}
 #endif
 	// go get a mid from the registry if we can't get it from the HD..
