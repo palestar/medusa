@@ -29,7 +29,7 @@ CharString MetaClient::getMID()
 	DWORD dSerial;
 	if (GetVolumeInformation(_T("C:\\"), NULL, 0, &dSerial, NULL, NULL, NULL, 0) != NULL)
 	{
-		CharString sSerial = CharString().format("$d", dSerial);
+		CharString sSerial = CharString().format("%d", dSerial);
 		mid = MD5(sSerial).checksum();
 	}
 #endif
