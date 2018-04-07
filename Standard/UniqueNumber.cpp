@@ -170,7 +170,7 @@ void UniqueNumber::set( const char * pKey )
 
 void UniqueNumber::setHex( const char * pHexKey )
 {
-	sscanf( pHexKey, "0xllX", &m_Id );
+	sscanf( pHexKey, "0x%llX", &m_Id );
 }
 
 //-------------------------------------------------------------------------------
