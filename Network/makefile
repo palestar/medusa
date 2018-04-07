@@ -36,7 +36,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -I ../ -D_DEBUG
-CXXFLAGS= -g -I ../ -D_DEBUG
+CXXFLAGS= -g -std=c++0x -I ../ -D_DEBUG
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libNetworkD.so
@@ -61,7 +61,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -O2 -g -I ../
-CXXFLAGS= -O2 -g -I ../
+CXXFLAGS= -O2 -g -std=c++0x -I ../
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libNetwork.so
