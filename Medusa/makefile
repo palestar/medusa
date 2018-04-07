@@ -36,7 +36,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -I ../ -I ../ThirdParty -D_DEBUG
-CXXFLAGS= -g -I ../ -I ../ThirdParty -D_DEBUG
+CXXFLAGS= -g -std=c++11 -I ../ -I ../ThirdParty -D_DEBUG
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libMedusaD.so
@@ -61,7 +61,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -O2 -g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10
-CXXFLAGS= -O2 -g -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10
+CXXFLAGS= -O2 -g -std=c++11 -I ../ -I ../ThirdParty -I ../ThirdParty/squish-1.10
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libMedusa.so

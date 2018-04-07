@@ -36,7 +36,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -I ../ -D_DEBUG
-CXXFLAGS= -g -I ../ -D_DEBUG
+CXXFLAGS= -g -std=c++11 -I ../ -D_DEBUG
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libRender3DD.so
@@ -61,7 +61,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -O2 -I ../
-CXXFLAGS= -g -O2 -I ../
+CXXFLAGS= -g -std=c++11 -O2 -I ../
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libRender3D.so

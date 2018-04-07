@@ -36,7 +36,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -I ../
-CXXFLAGS= -g -I ../
+CXXFLAGS= -g -std=c++11 -I ../
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libGCQD.so
@@ -61,7 +61,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -O2 -I ../
-CXXFLAGS= -g -O2 -I ../
+CXXFLAGS= -g -std=c++11 -O2 -I ../
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libGCQ.so
