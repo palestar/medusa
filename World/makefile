@@ -36,7 +36,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -g -I ../ -I ../ThirdParty/LuaJIT/src/ -D_DEBUG
-CXXFLAGS= -g -std=c++0x -I ../ -I ../ThirdParty/LuaJIT/src/ -D_DEBUG
+CXXFLAGS= -g -I ../ -I ../ThirdParty/LuaJIT/src/ -D_DEBUG
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libWorldD.so
@@ -61,7 +61,7 @@ CC= gcc
 CXX= g++
 AR= ar
 CFLAGS= -O2 -g -I ../ -I ../ThirdParty/LuaJIT/src/
-CXXFLAGS= -O2 -g -std=c++0x -I ../ -I ../ThirdParty/LuaJIT/src/
+CXXFLAGS= -O2 -g -I ../ -I ../ThirdParty/LuaJIT/src/
 ARFLAGS= cru
 LDFLAGS= -shared
 RESULT=libWorld.so
