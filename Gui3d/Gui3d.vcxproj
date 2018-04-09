@@ -393,10 +393,6 @@
       <Project>{18b80ecb-53ae-47e1-af11-0c994cac2c1d}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\ThirdParty\LuaJIT\src\LuaLib.vcxproj">
-      <Project>{94699964-b94e-4623-b51a-a2071f6c15dc}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="..\World\World.vcxproj">
       <Project>{74ef8552-8c85-4859-b8f0-5f056c17d3a5}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

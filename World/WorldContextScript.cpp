@@ -19,6 +19,7 @@
 #include "Standard/Queue.h"
 
 #include "LuaHeaders.h"
+//#include "ThirdParty/LuaJIT/src/lua.hpp"
 #ifdef USE_PLAIN_LUA
 	#ifdef _DEBUG
 		#pragma comment( lib, "../../Medusa/ThirdParty/Lua51/bin/Lua51D.lib")
@@ -26,8 +27,8 @@
 		#pragma comment( lib, "../../Medusa/ThirdParty/Lua51/bin/Lua51.lib")
 	#endif
 #else
-	#include "../../Medusa/ThirdParty/LuaJIT/jit/opt.h"
-	#include "../../Medusa/ThirdParty/LuaJIT/jit/opt_inline.h"
+	#include "../../Medusa/ThirdParty/LuaJIT/src/jit/opt.h"
+	#include "../../Medusa/ThirdParty/LuaJIT/src/jit/opt_inline.h"
 
 	#ifdef _DEBUG
 		#pragma comment( lib, "../../Medusa/ThirdParty/LuaJIT/bin/Lua51D.lib")

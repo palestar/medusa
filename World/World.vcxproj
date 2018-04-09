@@ -287,10 +287,6 @@
       <Project>{18b80ecb-53ae-47e1-af11-0c994cac2c1d}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-    <ProjectReference Include="..\ThirdParty\LuaJIT\src\LuaLib.vcxproj">
-      <Project>{94699964-b94e-4623-b51a-a2071f6c15dc}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
