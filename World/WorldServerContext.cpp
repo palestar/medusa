@@ -153,6 +153,11 @@ int WorldServer::spawnedScore( int a_nFactionId )
 	return 0;
 }
 
+int WorldServer::maxPlayerScoreAI()
+{
+	return 0;
+}
+
 void WorldServer::onChat( Noun * pNoun, const char * pMessage )
 {
 	CharString sStatus;

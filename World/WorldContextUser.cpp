@@ -43,6 +43,11 @@ int WorldContext::User::spawnedScore( int a_nFactionId )
 	return 0;
 }
 
+int WorldContext::User::maxPlayerScoreAI()
+{
+	return 0;
+}
+
 void WorldContext::User::onChat( Noun * pNoun, const char * pMessage )
 {}
 
