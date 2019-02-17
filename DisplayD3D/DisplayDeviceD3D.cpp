@@ -1376,7 +1376,7 @@ bool DisplayDeviceD3D::initializeDirectX()
 
 	D3DADAPTER_IDENTIFIER9 d3dai;
 	m_pD3D->GetAdapterIdentifier(d3dcaps.AdapterOrdinal, 0, &d3dai);
-	LOG_STATUS("SysInfo",CharString().format("Display Device Name: %s %s", d3dai.Description));
+	LOG_STATUS("SysInfo",CharString().format("Display Device Name: %s", d3dai.Description));
 
 	m_MaxAnisotropy = d3dcaps.MaxAnisotropy;
 	LOG_STATUS("SysInfo", CharString().format("Max Anisotropic Filtering: %d", m_MaxAnisotropy));
