@@ -1374,8 +1374,12 @@ bool DisplayDeviceD3D::initializeDirectX()
 	D3DCAPS9 d3dcaps;
 	m_pD3DD->GetDeviceCaps(&d3dcaps);
 
+	D3DADAPTER_IDENTIFIER9 d3dai;
+	m_pD3D->GetAdapterIdentifier(d3dcaps.AdapterOrdinal, 0, &d3dai);
+	LOG_STATUS("SysInfo",CharString().format("Display Device Name: %s %s", d3dai.Description));
+
 	m_MaxAnisotropy = d3dcaps.MaxAnisotropy;
-	TRACE(CharString().format("MaxAnisotropy : %d", m_MaxAnisotropy));
+	LOG_STATUS("SysInfo", CharString().format("Max Anisotropic Filtering: %d", m_MaxAnisotropy));
 	m_TextureP2 = (d3dcaps.TextureCaps & D3DPTEXTURECAPS_POW2) != 0;
 	m_TextureSquare = (d3dcaps.TextureCaps & D3DPTEXTURECAPS_SQUAREONLY) != 0;
 	m_TextureMaxSize = SizeInt(d3dcaps.MaxTextureWidth, d3dcaps.MaxTextureHeight);
@@ -1383,11 +1387,11 @@ bool DisplayDeviceD3D::initializeDirectX()
 
 	m_fPixelShaderVersion = D3DSHADER_VERSION_MAJOR(d3dcaps.PixelShaderVersion) +
 		(D3DSHADER_VERSION_MINOR(d3dcaps.PixelShaderVersion) / 10.0f);
-	TRACE(CharString().format("Pixel Shader : %.1f", m_fPixelShaderVersion));
+	LOG_STATUS("SysInfo", CharString().format("Pixel Shader: %.1f", m_fPixelShaderVersion));
 
 	m_fVertexShaderVersion = D3DSHADER_VERSION_MAJOR(d3dcaps.VertexShaderVersion) +
 		(D3DSHADER_VERSION_MINOR(d3dcaps.VertexShaderVersion) / 10.0f);
-	TRACE(CharString().format("Vertex Shader : %.1f", m_fVertexShaderVersion));
+	LOG_STATUS("SysInfo", CharString().format("Vertex Shader: %.1f", m_fVertexShaderVersion));
 
 	// we require pixel/vertex shader 3.0 for our advanced rendering effects.. if card is less than this, use fixed function pipeline..
 	if (m_fVertexShaderVersion < 1.0f || m_fPixelShaderVersion < 1.0f)
