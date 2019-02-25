@@ -38,15 +38,20 @@ END_PROPERTY_LIST();
 Widget::Widget() : m_Key( (qword)0 ), m_nVersion( 0 )
 {}
 
+#pragma warning(push)
+#pragma warning(disable :4297)
 Widget::~Widget()
 {
 	AutoLock lock( &widgetLock() );
 	unregisterKey();
 
+
 	// we should NEVER have a WidgetHandle for a Widget with an ID of 0..
 	if ( m_pWidgetHandle.valid() )
 		throw BadWidget();
+
 }
+#pragma warning(pop)
 
 //---------------------------------------------------------------------------------------------------
 
