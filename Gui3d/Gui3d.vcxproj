@@ -14,7 +14,7 @@
     <ProjectName>GUI3D</ProjectName>
     <ProjectGuid>{CD91E4F5-1AFF-476D-94BE-C9770ACFAF98}</ProjectGuid>
     <RootNamespace>GUI3D</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
