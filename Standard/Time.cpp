@@ -14,8 +14,6 @@
 
 //! Define to non-zero to enable the use of QueryPerformanceCount() for Time::milliseconds()..
 #define ENABLE_QPC				1
-//! How often to update the QPC frequency rate
-#define UPDATE_QPC_FREQ			500
 
 //! Define to non-zero to enable the use of winmm for Time::milliseconds()...
 #define ENABLE_WINMM			0
@@ -50,26 +48,16 @@ public:
 		if (! SetThreadAffinityMask( GetCurrentThread(), 1 << nProcessor ) )
 			THROW_EXCEPTION( "Call failed to SetThreadAffinityMask()" );
 
-		double	fRecFreq = 1.0;
-		int		nUpdateFreq = 0;
 		while( m_bActive )
 		{
-			// update the frequency every now and then since power management may change the CPU speed..
-			if ( --nUpdateFreq <= 0 )
-			{
-				LARGE_INTEGER f;
-				if (!QueryPerformanceFrequency( &f ) )
-					THROW_EXCEPTION( "Call failed to QueryPerformanceFrequency()" );
-				fRecFreq = 1.0 / f.QuadPart;
+			LARGE_INTEGER f, t;
+			if (!QueryPerformanceFrequency( &f ) )
+				THROW_EXCEPTION( "Call failed to QueryPerformanceFrequency()" );
 
-				nUpdateFreq = UPDATE_QPC_FREQ;
-			}
-
-			LARGE_INTEGER t;
 			if (! QueryPerformanceCounter( &t ) )
 				THROW_EXCEPTION( "Call failed to QueryPerformanceCounter()" );
 
-			m_nMilliseconds = (dword)(t.QuadPart * fRecFreq * 1000.0);
+			m_nMilliseconds = (dword)((1000LL * t.QuadPart) / f.QuadPart);
 
 			// sleep for 1 millisecond ..
 			Sleep( 1 );
