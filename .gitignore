@@ -21,3 +21,4 @@ UpgradeLog.htm
 unsuccessfulbuild
 *.dll
 Release/
+ReleaseLinux/
