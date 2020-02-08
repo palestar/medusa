@@ -26,8 +26,6 @@
 #include <windows.h>
 #endif
 
-#pragma warning( disable : 4146 )	// unary minus operator applied to unsigned type, result still unsigned
-
 //---------------------------------------------------------------------------------------------------
 
 static float GetPercent( qword nCPU, qword nTotalCPU )

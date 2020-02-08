@@ -40,27 +40,32 @@ bool ParseSLN( const char * pSLN, std::list< Project > & projects )
 		return false;
 
 	char sLine[ 1024 ];
-	while( fgets( sLine, sizeof(sLine), fp ) )
+	if (fp != NULL)
 	{
-		// Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin", "Bin\Bin.vcproj", "{F62DE62B-7D7A-4A6D-BA5B-12EB111CB75C}"
-		char sGUID1[ 128 ];
-		char sGUID2[ 128 ];
-		char sName[ 128 ];
-		char sProject[ 1024 ];
-
-		int n = sscanf_s( sLine, "Project(\"{%s}\") = \"%s\", \"%s\", \"{%s}\"", sGUID1, sName, sProject, sGUID2 );
-		if ( n == 4 )
+		while (fgets(sLine, sizeof(sLine), fp))
 		{
-			Project prj;
-			prj.sGUID = sGUID2;
-			prj.sName = sName;
-			prj.sProject = sProject;
+			// Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Bin", "Bin\Bin.vcproj", "{F62DE62B-7D7A-4A6D-BA5B-12EB111CB75C}"
+			char sGUID1[128];
+			char sGUID2[128];
+			sGUID2[0] = '\0';
+			char sName[128];
+			sName[0] = '\0';
+			char sProject[1024];
+			sProject[0] = '\0';
 
-			projects.push_back( prj );
+			int n = sscanf_s(sLine, "Project(\"{%s}\") = \"%s\", \"%s\", \"{%s}\"", sGUID1, (unsigned)sizeof(sGUID1), sName, (unsigned)sizeof(sName), sProject, (unsigned)sizeof(sProject), sGUID2, (unsigned)sizeof(sGUID2));
+			if (n == 4)
+			{
+				Project prj;
+				prj.sGUID = sGUID2;
+				prj.sName = sName;
+				prj.sProject = sProject;
+
+				projects.push_back(prj);
+			}
 		}
+		fclose(fp);
 	}
-
-	fclose( fp );
 	return true;
 }
 
