@@ -27,12 +27,11 @@ qword rdtsc()
 	return __rdtsc();
 }
 #else
-#include <cstdint>
 qword rdtsc()
 {
-	uint32_t hi, lo;
-	__asm__ __volatile__("rdtsc" : "=a"(lo), "=d"(hi));
-	return ((uint64_t)lo) | (((uint64_t)hi) << 32);
+	qword x;
+	__asm__ volatile (".byte 0x0f, 0x31" : "=A" (x));
+	return x;
 }
 #endif
 
