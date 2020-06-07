@@ -73,7 +73,10 @@ bool AudioDeviceDS::initialize( void * hWnd,
 	DSBUFFERDESC dsbdesc;
 	memset(&dsbdesc,0,sizeof(DSBUFFERDESC));
 	dsbdesc.dwSize = sizeof(DSBUFFERDESC);
-	dsbdesc.dwFlags = DSBCAPS_PRIMARYBUFFER | DSBCAPS_CTRLVOLUME; 
+	dsbdesc.dwFlags = DSBCAPS_PRIMARYBUFFER
+		| DSBCAPS_GETCURRENTPOSITION2
+		| DSBCAPS_CTRLVOLUME
+		| DSBCAPS_STICKYFOCUS;
 
 	if ( m_DS->CreateSoundBuffer( &dsbdesc, &m_DSPrimary, NULL) != DS_OK )
 		return false;

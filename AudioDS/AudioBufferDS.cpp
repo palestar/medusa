@@ -196,7 +196,12 @@ bool AudioBufferDS::initializeBuffer( int size, int channels, int bits, int rate
 	DSBUFFERDESC dsbdesc;
 	memset(&dsbdesc,0,sizeof(DSBUFFERDESC));
 	dsbdesc.dwSize = sizeof(DSBUFFERDESC);
-	dsbdesc.dwFlags = DSBCAPS_CTRLPAN | DSBCAPS_CTRLVOLUME | DSBCAPS_CTRLFREQUENCY | DSBCAPS_GETCURRENTPOSITION2 | DSBCAPS_CTRLPOSITIONNOTIFY; 
+	dsbdesc.dwFlags = DSBCAPS_CTRLPAN
+		| DSBCAPS_CTRLVOLUME
+		| DSBCAPS_CTRLFREQUENCY
+		| DSBCAPS_GETCURRENTPOSITION2
+		| DSBCAPS_CTRLPOSITIONNOTIFY
+		| DSBCAPS_GLOBALFOCUS;
 	dsbdesc.lpwfxFormat = &wfx;
 	dsbdesc.dwBufferBytes = m_Size;
 
