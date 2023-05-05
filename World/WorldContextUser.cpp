@@ -48,6 +48,11 @@ int WorldContext::User::maxPlayerScoreAI()
 	return 0;
 }
 
+int WorldContext::User::baseTeamAi() const
+{
+	return 0;
+}
+
 void WorldContext::User::onChat( Noun * pNoun, const char * pMessage )
 {}
 

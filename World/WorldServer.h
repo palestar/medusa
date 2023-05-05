@@ -474,6 +474,7 @@ protected:
 	virtual int			playerCount() const;							// get the current number of players in this world
 	virtual int			spawnedScore( int a_nFactionId );
 	virtual int			maxPlayerScoreAI();
+	virtual int			baseTeamAi() const;
 
 	virtual void		onChat( Noun * pNoun, const char * pMessage );
 

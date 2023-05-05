@@ -158,6 +158,11 @@ int WorldServer::maxPlayerScoreAI()
 	return 0;
 }
 
+int WorldServer::baseTeamAi() const
+{
+	return 0;
+}
+
 void WorldServer::onChat( Noun * pNoun, const char * pMessage )
 {
 	CharString sStatus;
